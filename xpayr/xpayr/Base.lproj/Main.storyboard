@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qOf-V2-PoX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Xpayr-->
+        <scene sceneID="qsk-LP-qJl">
+            <objects>
+                <tableViewController id="Ng3-58-DGX" customClass="ViewController" customModule="xpayr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="f9o-W3-sYA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Ng3-58-DGX" id="xal-Mz-noC"/>
+                            <outlet property="delegate" destination="Ng3-58-DGX" id="wmj-PK-ppp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Xpayr" id="A9n-Qf-8PR">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="juR-8A-kjN">
+                            <connections>
+                                <segue destination="A10-Fd-Kbp" kind="show" id="dia-Od-ePR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9om-Bf-vRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="139"/>
+        </scene>
+        <!--Create-->
+        <scene sceneID="ezr-YR-X81">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Create" id="A10-Fd-Kbp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8l-VO-p1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vil-N8-fBZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qOf-V2-PoX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HIw-Id-qHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ng3-58-DGX" kind="relationship" relationship="rootViewController" id="oww-iB-Ue4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNa-eH-bhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
