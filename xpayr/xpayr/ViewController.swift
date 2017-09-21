@@ -14,16 +14,17 @@ class ViewController: UITableViewController {
     @IBOutlet weak var addButton: UIBarButtonItem!
 
     // MARK: - Properties
-    var items: [Item] = []
-
+    var items: [Item]?
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.register(UINib(nibName: "ItemCell", bundle: nil), forCellReuseIdentifier: "ItemCell")
+    }
 
-        items.append(Item(name: "Dunya", image: nil, expirationDate: Date()))
-        items.append(Item(name: "Basak", image: nil, expirationDate: Date()))
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,12 +34,12 @@ class ViewController: UITableViewController {
 
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return items!.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
-        cell.item = items[indexPath.row]
+        cell.item = items?[indexPath.row]
         return cell
     }
 }

@@ -4,13 +4,39 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DefaultsKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-xpayr.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyCam.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>0AD92C0B5FA93C9D68EF3EFC3FB39042</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63387491D8456CA065693CC9809E9A50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5F8FCA33D425059CEE2299D87DCDD5B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

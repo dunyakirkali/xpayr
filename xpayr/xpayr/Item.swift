@@ -6,16 +6,15 @@
 //  Copyright © 2017 Ahtung Ltd. Sti. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class Item {
-    var name: String
+class Item: Codable {
+    var name: String?
     var image: UIImage?
-    var expirationDate: Date
+    var expirationDate: Date?
 
-    init(name: String, image: UIImage?, expirationDate: Date) {
-        self.image = image
-        self.name = name
-        self.expirationDate = expirationDate
+    func toDictionary() -> [String:Any] {
+        return ["name": name, "image": image, "expirationDate": expirationDate]
     }
 }

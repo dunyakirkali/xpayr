@@ -15,20 +15,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="46a-cA-CRQ" userLabel="Image">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20l-dt-TJ2">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="46a-cA-CRQ" userLabel="Image">
-                            <rect key="frame" x="0.0" y="0.0" width="50" height="102"/>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d2-xG-xUL" userLabel="Name">
-                            <rect key="frame" x="50" y="0.0" width="42" height="102"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d2-xG-xUL" userLabel="Name">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="102"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCZ-l9-7Hw" userLabel="Expiration Date">
-                            <rect key="frame" x="92" y="0.0" width="283" height="102"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCZ-l9-7Hw" userLabel="Expiration Date">
+                            <rect key="frame" x="333" y="0.0" width="42" height="102"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -40,8 +40,12 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="20l-dt-TJ2" secondAttribute="bottom" id="Dxz-VN-LXg"/>
                 <constraint firstItem="20l-dt-TJ2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JWY-VC-RXH"/>
+                <constraint firstAttribute="bottom" secondItem="46a-cA-CRQ" secondAttribute="bottom" id="XKd-e6-XZf"/>
                 <constraint firstItem="20l-dt-TJ2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Z5J-1L-AgF"/>
+                <constraint firstItem="46a-cA-CRQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aGY-me-bOj"/>
                 <constraint firstAttribute="trailing" secondItem="20l-dt-TJ2" secondAttribute="trailing" id="eCY-nf-rZi"/>
+                <constraint firstAttribute="trailing" secondItem="46a-cA-CRQ" secondAttribute="trailing" id="h4l-k7-X5k"/>
+                <constraint firstItem="46a-cA-CRQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qxD-4P-WIj"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

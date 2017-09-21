@@ -17,6 +17,8 @@
 		105747921F6F1D0800154ECB /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747911F6F1D0800154ECB /* ItemCell.swift */; };
 		105747941F6F1D1900154ECB /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105747931F6F1D1900154ECB /* ItemCell.xib */; };
 		105747981F6F24A600154ECB /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747971F6F24A600154ECB /* CreationViewController.swift */; };
+		105747A51F7066CB00154ECB /* ExpirationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747A41F7066CB00154ECB /* ExpirationViewController.swift */; };
+		105747A71F70677900154ECB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747A61F70677900154ECB /* ImageViewController.swift */; };
 		96F6423D242616F23A38CACF /* Pods_xpayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDC1001A1984BC57A8098CB /* Pods_xpayr.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		105747911F6F1D0800154ECB /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		105747931F6F1D1900154ECB /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		105747971F6F24A600154ECB /* CreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
+		105747A41F7066CB00154ECB /* ExpirationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpirationViewController.swift; sourceTree = "<group>"; };
+		105747A61F70677900154ECB /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		57B708A9C5632C0EEF0DFD0B /* Pods-xpayr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xpayr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xpayr/Pods-xpayr.debug.xcconfig"; sourceTree = "<group>"; };
 		6CDC1001A1984BC57A8098CB /* Pods_xpayr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xpayr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0059196729BBE16D9F509A2 /* Pods-xpayr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xpayr.release.xcconfig"; path = "Pods/Target Support Files/Pods-xpayr/Pods-xpayr.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 			children = (
 				1057477A1F6F134800154ECB /* ViewController.swift */,
 				105747971F6F24A600154ECB /* CreationViewController.swift */,
+				105747A41F7066CB00154ECB /* ExpirationViewController.swift */,
+				105747A61F70677900154ECB /* ImageViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -215,13 +221,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xpayr-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5F4516DAF24D45D83717058A /* [CP] Embed Pods Frameworks */ = {
@@ -230,9 +239,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-xpayr/Pods-xpayr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DefaultsKit/DefaultsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyCam/SwiftyCam.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DefaultsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyCam.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -262,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				105747981F6F24A600154ECB /* CreationViewController.swift in Sources */,
+				105747A51F7066CB00154ECB /* ExpirationViewController.swift in Sources */,
 				105747921F6F1D0800154ECB /* ItemCell.swift in Sources */,
+				105747A71F70677900154ECB /* ImageViewController.swift in Sources */,
 				1057477B1F6F134800154ECB /* ViewController.swift in Sources */,
 				1057478F1F6F1BEC00154ECB /* Item.swift in Sources */,
 				105747791F6F134800154ECB /* AppDelegate.swift in Sources */,
@@ -439,6 +455,7 @@
 				105747891F6F134800154ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
