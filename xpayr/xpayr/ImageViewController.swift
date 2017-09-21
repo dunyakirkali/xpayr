@@ -7,30 +7,35 @@
 //
 
 import UIKit
-import SwiftyCam
 
-class ImageViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
+class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: - Properties
     var item: Item?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        cameraDelegate = self
-
-        let captureButton = SwiftyCamButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        captureButton.delegate = self
-        view.addSubview(captureButton)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC: CreationViewController = segue.destination as! CreationViewController
         destinationVC.item = item
-        print(item)
     }
 
-    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
-        item?.image = photo
+    @IBAction func openCameraButton(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera;
+            imagePicker.allowsEditing = false
+            self.navigationController?.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        item?.image = image
+        dismiss(animated:true, completion: nil)
     }
 }
 

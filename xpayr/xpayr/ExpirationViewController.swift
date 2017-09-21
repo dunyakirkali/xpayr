@@ -21,11 +21,16 @@ class ExpirationViewController: UIViewController {
 
         picker.minimumDate = Date()
         item = Item(name: "", image: nil, expirationDate: Date())
+
+        picker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC: ImageViewController = segue.destination as! ImageViewController
         destinationVC.item = item
-        print(item)
+    }
+
+    func dateChanged(_ sender: UIDatePicker) {
+        item?.expirationDate = sender.date
     }
 }

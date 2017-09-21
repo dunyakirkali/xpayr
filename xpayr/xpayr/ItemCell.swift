@@ -12,6 +12,7 @@ class ItemCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var expirationLabel: UILabel!
+    @IBOutlet weak var img: UIImageView!
 
     var item: Item? {
         didSet {
@@ -21,6 +22,8 @@ class ItemCell: UITableViewCell {
             dateFormatter.dateFormat = "dd MMM yyyy"
             dateFormatter.locale = Locale.init(identifier: "nl_NL")
             expirationLabel.text = dateFormatter.string(from: (item?.expirationDate)!)
+
+            img.image = item?.image
         }
     }
     

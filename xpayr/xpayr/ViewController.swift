@@ -15,12 +15,19 @@ class ViewController: UITableViewController {
 
     // MARK: - Properties
     var items: [Item]?
+    var filePath: String {
+        let manager = FileManager.default
+        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
+        return (url!.appendingPathComponent("Data").path)
+    }
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.register(UINib(nibName: "ItemCell", bundle: nil), forCellReuseIdentifier: "ItemCell")
+
+        loadData()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -41,6 +48,19 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         cell.item = items?[indexPath.row]
         return cell
+    }
+
+    public func saveData(item: Item) {
+        self.items?.append(item)
+        NSKeyedArchiver.archiveRootObject(self.items ?? [], toFile: filePath)
+    }
+
+    private func loadData() {
+        if let ourData = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [Item] {
+            items = ourData
+        } else {
+            items = [Item]()
+        }
     }
 }
 
