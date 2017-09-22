@@ -63,6 +63,7 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="container" destination="NQf-7V-nE9" id="fMJ-ay-m3B"/>
                 <outlet property="expirationLabel" destination="CCZ-l9-7Hw" id="L6F-Fp-vaZ"/>
                 <outlet property="img" destination="46a-cA-CRQ" id="b2f-E5-vjW"/>
                 <outlet property="nameLabel" destination="8d2-xG-xUL" id="Min-65-99W"/>
