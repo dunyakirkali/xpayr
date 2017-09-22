@@ -26,7 +26,7 @@ class CreationViewController: UIViewController {
     // MARK: - Actions
     @IBAction func saveItem(_ sender: AnyObject) {
         let destinationVC: ViewController = self.navigationController?.viewControllers.first as! ViewController
-        destinationVC.saveData(item: item!)
+        destinationVC.add(item: item!)
         self.navigationController?.popToRootViewController(animated: true)
     }
 }

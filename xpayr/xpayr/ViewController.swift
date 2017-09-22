@@ -56,7 +56,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         guard orientation == .right else { return nil }
 
         let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
-            // handle action by updating model with deletion
+            self.remove(at: indexPath.row)
         }
 
         // customize the action appearance
@@ -65,8 +65,18 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         return [deleteAction]
     }
 
-    public func saveData(item: Item) {
+    public func add(item: Item) {
         self.items?.append(item)
+        saveData()
+    }
+
+    public func remove(at: Int) {
+        self.items?.remove(at: at)
+        saveData()
+        tableView.reloadData()
+    }
+
+    private func saveData() {
         NSKeyedArchiver.archiveRootObject(self.items ?? [], toFile: filePath)
     }
 
