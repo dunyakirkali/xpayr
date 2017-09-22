@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class ViewController: UITableViewController {
+class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     // MARK: - IBOutlets
     @IBOutlet weak var addButton: UIBarButtonItem!
@@ -47,7 +48,21 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         cell.item = items?[indexPath.row]
+        cell.delegate = self
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        guard orientation == .right else { return nil }
+
+        let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
+            // handle action by updating model with deletion
+        }
+
+        // customize the action appearance
+        deleteAction.image = UIImage(named: "delete")
+        
+        return [deleteAction]
     }
 
     public func saveData(item: Item) {
