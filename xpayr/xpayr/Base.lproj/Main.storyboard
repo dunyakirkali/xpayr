@@ -24,7 +24,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="A9n-Qf-8PR">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="juR-8A-kjN">
+                        <barButtonItem key="rightBarButtonItem" image="IQButtonBarArrowRight.png" id="juR-8A-kjN">
                             <connections>
                                 <segue destination="A10-Fd-Kbp" kind="show" id="dia-Od-ePR"/>
                             </connections>
@@ -62,4 +62,7 @@
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IQButtonBarArrowRight.png" width="12" height="21"/>
+    </resources>
 </document>

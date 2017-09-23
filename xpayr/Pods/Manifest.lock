@@ -1,12 +1,15 @@
 PODS:
+  - IQKeyboardManager (4.0.12)
   - SwipeCellKit (1.9.1)
 
 DEPENDENCIES:
+  - IQKeyboardManager
   - SwipeCellKit
 
 SPEC CHECKSUMS:
+  IQKeyboardManager: feb4562ba22266c179801a76228017f7a3c0d111
   SwipeCellKit: e9ff953c820394a4e641cfb0118b6c959506aec2
 
-PODFILE CHECKSUM: 108b028547e5f4dbe8d20fb6b5b9fba77f318d56
+PODFILE CHECKSUM: cdbad587950a587cd4cd09d78150f4bc2d50577e
 
 COCOAPODS: 1.3.1

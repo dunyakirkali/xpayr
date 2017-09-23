@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class Item: NSObject, NSCoding  {
+    // MARK: - Properties
     var name: String?
     var image: UIImage?
     var expirationDate: Date?
@@ -20,6 +21,7 @@ class Item: NSObject, NSCoding  {
         static let expirationDate = "expirationDate"
     }
 
+    // MARK: - Initializers
     init(name: String?, image: UIImage?, expirationDate: Date?) {
         self.name = name
         self.image = image

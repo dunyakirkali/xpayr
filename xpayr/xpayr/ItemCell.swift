@@ -29,7 +29,7 @@ class ItemCell: SwipeTableViewCell {
 
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "dd MMM yyyy"
-            dateFormatter.locale = Locale.init(identifier: "nl_NL")
+            dateFormatter.locale = Locale.current
             expirationLabel.text = dateFormatter.string(from: (item?.expirationDate)!)
 
             img.image = item?.image

@@ -27,17 +27,11 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         super.viewDidLoad()
 
         tableView.register(UINib(nibName: "ItemCell", bundle: nil), forCellReuseIdentifier: "ItemCell")
-
         loadData()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - UITableViewDataSource
@@ -65,21 +59,25 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         return [deleteAction]
     }
 
+    // TODO: (dunyakirkali) Move to presenter
     public func add(item: Item) {
         self.items?.append(item)
         saveData()
     }
 
+    // TODO: (dunyakirkali) Move to presenter
     public func remove(at: Int) {
         self.items?.remove(at: at)
         saveData()
         tableView.reloadData()
     }
 
+    // TODO: (dunyakirkali) Move to presenter
     private func saveData() {
         NSKeyedArchiver.archiveRootObject(self.items ?? [], toFile: filePath)
     }
 
+    // TODO: (dunyakirkali) Move to presenter
     private func loadData() {
         if let ourData = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [Item] {
             items = ourData
