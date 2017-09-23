@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().barTintColor = UIColor(colorLiteralRed: 0.984, green: 0.984, blue: 0.984, alpha: 1)
+        UINavigationBar.appearance().isTranslucent = false
         
         return true
     }
