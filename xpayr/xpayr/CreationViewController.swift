@@ -46,7 +46,6 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         item?.image = image
-        photoButton.isHidden = true
         preview.image = image
         preview.isHidden = false
         dismiss(animated:true, completion: nil)
