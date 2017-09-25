@@ -30,13 +30,17 @@ class Item: NSObject, NSCoding  {
 
     required init(coder aDecoder: NSCoder) {
         self.name = aDecoder.decodeObject(forKey: Keys.name) as? String ?? nil
-        self.image = aDecoder.decodeObject(forKey: Keys.image) as? UIImage ?? nil
+        if let imageData: Data = aDecoder.decodeObject(forKey: Keys.image) as? Data {
+            self.image = UIImage(data: imageData)
+        }
         self.expirationDate = aDecoder.decodeObject(forKey: Keys.expirationDate) as? Date ?? nil
     }
 
     func encode(with aCoder: NSCoder) {
         aCoder.encode(name, forKey: Keys.name)
-        aCoder.encode(image, forKey: Keys.image)
+        if let img: UIImage = image {
+            aCoder.encode(UIImagePNGRepresentation(img), forKey: Keys.image)
+        }
         aCoder.encode(expirationDate, forKey: Keys.expirationDate)
     }
 }

@@ -50,6 +50,10 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         tCell.item = items?[indexPath.row]
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 270
+    }
+
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         guard orientation == .right else { return nil }
 

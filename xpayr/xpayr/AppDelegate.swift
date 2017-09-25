@@ -18,8 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        UINavigationBar.appearance().barTintColor = UIColor(colorLiteralRed: 0.984, green: 0.984, blue: 0.984, alpha: 1)
+        UINavigationBar.appearance().barTintColor = UIColor(colorLiteralRed: 0.952, green: 0.952, blue: 0.952, alpha: 1)
         UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().tintColor = UIColor.black
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor.black,
+            NSFontAttributeName: "Futura"
+        ]
 
         IQKeyboardManager.shared().isEnabled = true
         
