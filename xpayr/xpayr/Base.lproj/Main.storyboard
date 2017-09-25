@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +27,7 @@
                     <navigationItem key="navigationItem" id="A9n-Qf-8PR">
                         <barButtonItem key="rightBarButtonItem" image="IQButtonBarArrowRight.png" id="juR-8A-kjN">
                             <connections>
-                                <segue destination="A10-Fd-Kbp" kind="show" id="dia-Od-ePR"/>
+                                <segue destination="h4z-tp-qgW" kind="show" id="tV3-F6-d6T"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -34,14 +35,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9om-Bf-vRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="999" y="139"/>
-        </scene>
-        <!--Create-->
-        <scene sceneID="ezr-YR-X81">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Create" id="A10-Fd-Kbp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v8l-VO-p1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1598" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vil-N8-fBZ">
@@ -60,6 +53,93 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNa-eH-bhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+        <!--Creation View Controller-->
+        <scene sceneID="rMT-03-Pr5">
+            <objects>
+                <viewController id="h4z-tp-qgW" customClass="CreationViewController" customModule="xpayr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EF4-O6-Khk"/>
+                        <viewControllerLayoutGuide type="bottom" id="yGa-we-xD3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LrE-GW-u9H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YkJ-5w-yeX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BmL-lt-om5">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR5-JQ-QGd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                        <state key="normal" title="Photo"/>
+                                        <connections>
+                                            <action selector="openCameraButtonWithSender:" destination="h4z-tp-qgW" eventType="touchUpInside" id="cHb-sc-gVw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BmL-lt-om5" firstAttribute="top" secondItem="YkJ-5w-yeX" secondAttribute="top" id="A3P-Tg-xyb"/>
+                                    <constraint firstAttribute="bottom" secondItem="YR5-JQ-QGd" secondAttribute="bottom" id="J2A-ho-cvx"/>
+                                    <constraint firstItem="YR5-JQ-QGd" firstAttribute="top" secondItem="YkJ-5w-yeX" secondAttribute="top" id="JvL-nB-c1B"/>
+                                    <constraint firstAttribute="trailing" secondItem="BmL-lt-om5" secondAttribute="trailing" id="NF6-fk-EJe"/>
+                                    <constraint firstAttribute="bottom" secondItem="BmL-lt-om5" secondAttribute="bottom" id="YO5-ag-bXa"/>
+                                    <constraint firstItem="YR5-JQ-QGd" firstAttribute="leading" secondItem="YkJ-5w-yeX" secondAttribute="leading" id="aj4-7g-gyU"/>
+                                    <constraint firstItem="BmL-lt-om5" firstAttribute="leading" secondItem="YkJ-5w-yeX" secondAttribute="leading" id="pN0-ts-QwL"/>
+                                    <constraint firstAttribute="trailing" secondItem="YR5-JQ-QGd" secondAttribute="trailing" id="pcP-v7-jci"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wb3-MD-QfO">
+                                <rect key="frame" x="0.0" y="333" width="375" height="333.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-Wg-AaF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-M3-aH1">
+                                        <rect key="frame" x="0.0" y="87.5" width="375" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="527374917.314596">
+                                            <!--2017-09-17 21:01:57 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urf-dC-jhZ">
+                                        <rect key="frame" x="0.0" y="303.5" width="375" height="30"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveItem:" destination="h4z-tp-qgW" eventType="touchUpInside" id="ejK-2v-t9h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YkJ-5w-yeX" firstAttribute="top" secondItem="LrE-GW-u9H" secondAttribute="top" id="7Ai-eL-rcS"/>
+                            <constraint firstItem="Wb3-MD-QfO" firstAttribute="height" secondItem="LrE-GW-u9H" secondAttribute="height" multiplier="0.5" id="Ibh-6i-ozo"/>
+                            <constraint firstAttribute="trailing" secondItem="Wb3-MD-QfO" secondAttribute="trailing" id="R5Q-xF-3JL"/>
+                            <constraint firstAttribute="trailing" secondItem="YkJ-5w-yeX" secondAttribute="trailing" id="dnm-eL-N04"/>
+                            <constraint firstItem="YkJ-5w-yeX" firstAttribute="leading" secondItem="LrE-GW-u9H" secondAttribute="leading" id="h5v-bi-DBZ"/>
+                            <constraint firstItem="Wb3-MD-QfO" firstAttribute="leading" secondItem="LrE-GW-u9H" secondAttribute="leading" id="oqp-gJ-L9a"/>
+                            <constraint firstItem="YkJ-5w-yeX" firstAttribute="height" secondItem="LrE-GW-u9H" secondAttribute="height" multiplier="0.5" id="qJI-8c-wKq"/>
+                            <constraint firstItem="yGa-we-xD3" firstAttribute="top" secondItem="Wb3-MD-QfO" secondAttribute="bottom" id="wh8-hc-cuZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="field" destination="Tpi-Wg-AaF" id="RsA-75-qGQ"/>
+                        <outlet property="photoButton" destination="YR5-JQ-QGd" id="jwP-fC-Xpm"/>
+                        <outlet property="picker" destination="ktP-M3-aH1" id="ICI-sh-uKe"/>
+                        <outlet property="preview" destination="BmL-lt-om5" id="j2b-ES-dWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ch7-Ud-BbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="139"/>
         </scene>
     </scenes>
     <resources>
