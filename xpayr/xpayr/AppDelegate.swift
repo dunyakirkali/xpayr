@@ -8,6 +8,7 @@
 
 import UIKit
 import IQKeyboardManager
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        // Navigation bar
+        // TODO: (dunyakirkali) Refactor to extension
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().barTintColor = UIColor(colorLiteralRed: 0.952, green: 0.952, blue: 0.952, alpha: 1)
@@ -26,7 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName: "Futura"
         ]
 
+        // IQKeyboard
+        // TODO: (dunyakirkali) Refactor to extension
         IQKeyboardManager.shared().isEnabled = true
+
+        // Local Notifications
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            print("Granted? \(granted)")
+        }
         
         return true
     }
