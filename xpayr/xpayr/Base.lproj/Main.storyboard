@@ -103,26 +103,26 @@
                                             <constraint firstItem="YR5-JQ-QGd" firstAttribute="leading" secondItem="YkJ-5w-yeX" secondAttribute="leading" id="wYI-Nm-cmD"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wb3-MD-QfO">
-                                        <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSK-mt-Tfd">
+                                        <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-Wg-AaF">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-M3-aH1">
-                                                <rect key="frame" x="0.0" y="67.5" width="375" height="216"/>
+                                                <rect key="frame" x="0.0" y="133" width="375" height="133"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="527374917.314596">
                                                     <!--2017-09-17 21:01:57 +0000-->
                                                 </date>
                                             </datePicker>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-jg-2cp">
-                                                <rect key="frame" x="0.0" y="283.5" width="375" height="50"/>
+                                                <rect key="frame" x="0.0" y="266" width="375" height="67"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urf-dC-jhZ">
-                                                        <rect key="frame" x="30" y="7.5" width="315" height="35"/>
+                                                        <rect key="frame" x="30" y="16.5" width="315" height="35"/>
                                                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="uaW-6f-5GZ"/>
@@ -144,18 +144,33 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ktP-M3-aH1" secondAttribute="trailing" id="8Ok-c3-voy"/>
+                                            <constraint firstItem="Tpi-Wg-AaF" firstAttribute="top" secondItem="GSK-mt-Tfd" secondAttribute="top" id="IZc-hx-hvN"/>
+                                            <constraint firstItem="Ppq-jg-2cp" firstAttribute="leading" secondItem="GSK-mt-Tfd" secondAttribute="leading" id="UpK-eE-gyH"/>
+                                            <constraint firstItem="Ppq-jg-2cp" firstAttribute="top" secondItem="ktP-M3-aH1" secondAttribute="bottom" id="VEj-oR-nf1"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tpi-Wg-AaF" secondAttribute="trailing" id="WkC-1T-j3a"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ppq-jg-2cp" secondAttribute="trailing" id="c43-on-gv6"/>
+                                            <constraint firstItem="ktP-M3-aH1" firstAttribute="leading" secondItem="GSK-mt-Tfd" secondAttribute="leading" id="ihE-Yt-IJB"/>
+                                            <constraint firstItem="Tpi-Wg-AaF" firstAttribute="height" secondItem="GSK-mt-Tfd" secondAttribute="height" multiplier="0.4" id="jMs-A2-RYW"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ppq-jg-2cp" secondAttribute="bottom" id="lB5-ab-5Ar"/>
+                                            <constraint firstItem="Tpi-Wg-AaF" firstAttribute="leading" secondItem="GSK-mt-Tfd" secondAttribute="leading" id="opx-v7-qL1"/>
+                                            <constraint firstItem="ktP-M3-aH1" firstAttribute="height" secondItem="GSK-mt-Tfd" secondAttribute="height" multiplier="0.4" id="twG-cC-ZRz"/>
+                                            <constraint firstItem="ktP-M3-aH1" firstAttribute="top" secondItem="Tpi-Wg-AaF" secondAttribute="bottom" id="vqz-H4-FtV"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Wb3-MD-QfO" secondAttribute="trailing" id="1Fm-Z7-7YA"/>
-                                    <constraint firstItem="Wb3-MD-QfO" firstAttribute="top" secondItem="YkJ-5w-yeX" secondAttribute="bottom" id="G5n-6I-uBn"/>
+                                    <constraint firstItem="GSK-mt-Tfd" firstAttribute="top" secondItem="YkJ-5w-yeX" secondAttribute="bottom" id="HyR-yi-Qag"/>
+                                    <constraint firstAttribute="trailing" secondItem="GSK-mt-Tfd" secondAttribute="trailing" id="KPi-Ub-hSy"/>
                                     <constraint firstItem="YkJ-5w-yeX" firstAttribute="height" secondItem="bXv-d3-6Qf" secondAttribute="height" multiplier="0.5" id="MgQ-4N-qyS"/>
-                                    <constraint firstAttribute="bottom" secondItem="Wb3-MD-QfO" secondAttribute="bottom" id="e1G-di-MfI"/>
-                                    <constraint firstItem="Wb3-MD-QfO" firstAttribute="leading" secondItem="bXv-d3-6Qf" secondAttribute="leading" id="fAO-sa-BAD"/>
+                                    <constraint firstAttribute="bottom" secondItem="GSK-mt-Tfd" secondAttribute="bottom" id="l27-Si-3yS"/>
                                     <constraint firstItem="YkJ-5w-yeX" firstAttribute="top" secondItem="bXv-d3-6Qf" secondAttribute="top" id="l3D-tQ-IO3"/>
                                     <constraint firstItem="YkJ-5w-yeX" firstAttribute="leading" secondItem="bXv-d3-6Qf" secondAttribute="leading" id="oBG-EJ-MD4"/>
                                     <constraint firstAttribute="trailing" secondItem="YkJ-5w-yeX" secondAttribute="trailing" id="r8C-vM-UuV"/>
+                                    <constraint firstItem="GSK-mt-Tfd" firstAttribute="leading" secondItem="bXv-d3-6Qf" secondAttribute="leading" id="tfb-hK-bH9"/>
                                 </constraints>
                             </view>
                         </subviews>
