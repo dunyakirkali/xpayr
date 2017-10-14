@@ -51,11 +51,11 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         dismiss(animated:true, completion: nil)
     }
 
-    func dateChanged(_ sender: UIDatePicker) {
+    @objc func dateChanged(_ sender: UIDatePicker) {
         item?.expirationDate = sender.date
     }
 
-    func textFieldDidChange(_ textField: UITextField) {
+    @objc func textFieldDidChange(_ textField: UITextField) {
         item?.name = textField.text!
     }
 }
