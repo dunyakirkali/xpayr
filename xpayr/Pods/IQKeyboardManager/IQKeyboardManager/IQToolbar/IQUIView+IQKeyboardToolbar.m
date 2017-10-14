@@ -25,10 +25,12 @@
 #import "IQUIView+IQKeyboardToolbar.h"
 #import "IQKeyboardManagerConstantsInternal.h"
 #import "IQKeyboardManager.h"
+
+#import <objc/runtime.h>
+
 #import <UIKit/UIImage.h>
 #import <UIKit/UILabel.h>
 #import <UIKit/UIAccessibility.h>
-#import <objc/runtime.h>
 
 /*UIKeyboardToolbar Category implementation*/
 @implementation UIView (IQToolbarAddition)
@@ -159,11 +161,17 @@
         }
     }
     
-    NSMutableArray *items = [[NSMutableArray alloc] init];
+    NSMutableArray<UIBarButtonItem*> *items = [[NSMutableArray alloc] init];
     
+    //Flexible space
+    [items addObject:[[self class] flexibleBarButtonItem]];
+
     //Title button
     toolbar.titleBarButton.title = self.shouldHideToolbarPlaceholder?nil:titleText;
-    if (IQ_IS_IOS11_OR_GREATER == NO)
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {}
+    else
+#endif
     {
         toolbar.titleBarButton.customView.frame = CGRectZero;
     }
@@ -225,11 +233,17 @@
         }
     }
     
-	NSMutableArray *items = [[NSMutableArray alloc] init];
+	NSMutableArray<UIBarButtonItem*> *items = [[NSMutableArray alloc] init];
     
+    //Flexible space
+    [items addObject:[[self class] flexibleBarButtonItem]];
+
     //Title button
     toolbar.titleBarButton.title = self.shouldHideToolbarPlaceholder?nil:titleText;
-    if (IQ_IS_IOS11_OR_GREATER == NO)
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {}
+    else
+#endif
     {
         toolbar.titleBarButton.customView.frame = CGRectZero;
     }
@@ -297,11 +311,17 @@
         }
     }
  	
-	NSMutableArray *items = [[NSMutableArray alloc] init];
+	NSMutableArray<UIBarButtonItem*> *items = [[NSMutableArray alloc] init];
+
+    //Flexible space
+    [items addObject:[[self class] flexibleBarButtonItem]];
 
     //Title button
     toolbar.titleBarButton.title = self.shouldHideToolbarPlaceholder?nil:titleText;
-    if (IQ_IS_IOS11_OR_GREATER == NO)
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {}
+    else
+#endif
     {
         toolbar.titleBarButton.customView.frame = CGRectZero;
     }
@@ -361,7 +381,7 @@
         }
     }
     
-    NSMutableArray *items = [[NSMutableArray alloc] init];
+    NSMutableArray<UIBarButtonItem*> *items = [[NSMutableArray alloc] init];
     
     //Left button
     IQBarButtonItem *cancelButton = toolbar.previousBarButton;
@@ -387,7 +407,10 @@
     
     //Title button
     toolbar.titleBarButton.title = self.shouldHideToolbarPlaceholder?nil:titleText;
-    if (IQ_IS_IOS11_OR_GREATER == NO)
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {}
+    else
+#endif
     {
         toolbar.titleBarButton.customView.frame = CGRectZero;
     }
@@ -453,7 +476,7 @@
         }
     }
     
-    NSMutableArray *items = [[NSMutableArray alloc] init];
+    NSMutableArray<UIBarButtonItem*> *items = [[NSMutableArray alloc] init];
     
     //Cancel button
     IQBarButtonItem *cancelButton = toolbar.previousBarButton;
@@ -472,7 +495,10 @@
     
     //Title button
     toolbar.titleBarButton.title = self.shouldHideToolbarPlaceholder?nil:titleText;
-    if (IQ_IS_IOS11_OR_GREATER == NO)
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {}
+    else
+#endif
     {
         toolbar.titleBarButton.customView.frame = CGRectZero;
     }
@@ -531,7 +557,7 @@
         }
     }
  
-	NSMutableArray *items = [[NSMutableArray alloc] init];
+	NSMutableArray<UIBarButtonItem*> *items = [[NSMutableArray alloc] init];
 	
     // Get the top level "bundle" which may actually be the framework
     NSBundle *mainBundle = [NSBundle bundleForClass:[IQKeyboardManager class]];
@@ -546,7 +572,11 @@
     UIImage *imageLeftArrow = nil;
     UIImage *imageRightArrow = nil;
     
+#ifdef __IPHONE_11_0
+    if (@available(iOS 10.0, *))
+#else
     if (IQ_IS_IOS10_OR_GREATER)
+#endif
     {
         imageLeftArrow = [UIImage imageNamed:@"IQButtonBarArrowUp" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
         imageRightArrow = [UIImage imageNamed:@"IQButtonBarArrowDown" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
@@ -558,11 +588,17 @@
     }
 
     //Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
-    if ([UIImage instancesRespondToSelector:@selector(imageFlippedForRightToLeftLayoutDirection)])
-    {
-        imageLeftArrow = [imageLeftArrow imageFlippedForRightToLeftLayoutDirection];
-        imageRightArrow = [imageRightArrow imageFlippedForRightToLeftLayoutDirection];
+#ifdef __IPHONE_11_0
+    if (@available(iOS 9.0, *)) {
+#endif
+        if ([UIImage instancesRespondToSelector:@selector(imageFlippedForRightToLeftLayoutDirection)])
+        {
+            imageLeftArrow = [imageLeftArrow imageFlippedForRightToLeftLayoutDirection];
+            imageRightArrow = [imageRightArrow imageFlippedForRightToLeftLayoutDirection];
+        }
+#ifdef __IPHONE_11_0
     }
+#endif
     
     //Previous button
     IQBarButtonItem *prev = toolbar.previousBarButton;
@@ -585,9 +621,17 @@
 
     //Fixed space
     IQBarButtonItem *fixed =[[IQBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    if (IQ_IS_IOS10_OR_GREATER) {
+    
+#ifdef __IPHONE_11_0
+    if (@available(iOS 10.0, *))
+#else
+    if (IQ_IS_IOS10_OR_GREATER)
+#endif
+    {
         [fixed setWidth:6];
-    } else {
+    }
+    else
+    {
         [fixed setWidth:20];
     }
     [items addObject:fixed];
@@ -616,7 +660,10 @@
     
     //Title button
     toolbar.titleBarButton.title = self.shouldHideToolbarPlaceholder?nil:titleText;
-    if (IQ_IS_IOS11_OR_GREATER == NO)
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {}
+    else
+#endif
     {
         toolbar.titleBarButton.customView.frame = CGRectZero;
     }
@@ -676,7 +723,7 @@
         }
     }
     
-    NSMutableArray *items = [[NSMutableArray alloc] init];
+    NSMutableArray<UIBarButtonItem*> *items = [[NSMutableArray alloc] init];
     
     // Get the top level "bundle" which may actually be the framework
     NSBundle *mainBundle = [NSBundle bundleForClass:[IQKeyboardManager class]];
@@ -691,20 +738,33 @@
     UIImage *imageLeftArrow = nil;
     UIImage *imageRightArrow = nil;
     
-    if (IQ_IS_IOS10_OR_GREATER) {
+#ifdef __IPHONE_11_0
+    if (@available(iOS 10.0, *))
+#else
+    if (IQ_IS_IOS10_OR_GREATER)
+#endif
+    {
         imageLeftArrow = [UIImage imageNamed:@"IQButtonBarArrowUp" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
         imageRightArrow = [UIImage imageNamed:@"IQButtonBarArrowDown" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
-    } else {
+    }
+    else
+    {
         imageLeftArrow = [UIImage imageNamed:@"IQButtonBarArrowLeft" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
         imageRightArrow = [UIImage imageNamed:@"IQButtonBarArrowRight" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
     }
     
     //Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
-    if ([UIImage instancesRespondToSelector:@selector(imageFlippedForRightToLeftLayoutDirection)])
-    {
-        imageLeftArrow = [imageLeftArrow imageFlippedForRightToLeftLayoutDirection];
-        imageRightArrow = [imageRightArrow imageFlippedForRightToLeftLayoutDirection];
+#ifdef __IPHONE_11_0
+    if (@available(iOS 9.0, *)) {
+#endif
+        if ([UIImage instancesRespondToSelector:@selector(imageFlippedForRightToLeftLayoutDirection)])
+        {
+            imageLeftArrow = [imageLeftArrow imageFlippedForRightToLeftLayoutDirection];
+            imageRightArrow = [imageRightArrow imageFlippedForRightToLeftLayoutDirection];
+        }
+#ifdef __IPHONE_11_0
     }
+#endif
 
     //Previous button
     IQBarButtonItem *prev = toolbar.previousBarButton;
@@ -727,9 +787,17 @@
     
     //Fixed space
     IQBarButtonItem *fixed =[[IQBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    if (IQ_IS_IOS10_OR_GREATER) {
+    
+#ifdef __IPHONE_11_0
+    if (@available(iOS 10.0, *))
+#else
+    if (IQ_IS_IOS10_OR_GREATER)
+#endif
+    {
         [fixed setWidth:6];
-    } else {
+    }
+    else
+    {
         [fixed setWidth:20];
     }
     [items addObject:fixed];
@@ -758,7 +826,10 @@
     
     //Title button
     toolbar.titleBarButton.title = self.shouldHideToolbarPlaceholder?nil:titleText;
-    if (IQ_IS_IOS11_OR_GREATER == NO)
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {}
+    else
+#endif
     {
         toolbar.titleBarButton.customView.frame = CGRectZero;
     }
@@ -820,7 +891,7 @@
         }
     }
     
-    NSMutableArray *items = [[NSMutableArray alloc] init];
+    NSMutableArray<UIBarButtonItem*> *items = [[NSMutableArray alloc] init];
     
     // Get the top level "bundle" which may actually be the framework
     NSBundle *mainBundle = [NSBundle bundleForClass:[IQKeyboardManager class]];
@@ -835,20 +906,33 @@
     UIImage *imageLeftArrow = nil;
     UIImage *imageRightArrow = nil;
     
-    if (IQ_IS_IOS10_OR_GREATER) {
+#ifdef __IPHONE_11_0
+    if (@available(iOS 10.0, *))
+#else
+    if (IQ_IS_IOS10_OR_GREATER)
+#endif
+    {
         imageLeftArrow = [UIImage imageNamed:@"IQButtonBarArrowUp" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
         imageRightArrow = [UIImage imageNamed:@"IQButtonBarArrowDown" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
-    } else {
+    }
+    else
+    {
         imageLeftArrow = [UIImage imageNamed:@"IQButtonBarArrowLeft" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
         imageRightArrow = [UIImage imageNamed:@"IQButtonBarArrowRight" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
     }
     
     //Support for RTL languages like Arabic, Persia etc... (Bug ID: #448)
-    if ([UIImage instancesRespondToSelector:@selector(imageFlippedForRightToLeftLayoutDirection)])
-    {
-        imageLeftArrow = [imageLeftArrow imageFlippedForRightToLeftLayoutDirection];
-        imageRightArrow = [imageRightArrow imageFlippedForRightToLeftLayoutDirection];
+#ifdef __IPHONE_11_0
+    if (@available(iOS 9.0, *)) {
+#endif
+        if ([UIImage instancesRespondToSelector:@selector(imageFlippedForRightToLeftLayoutDirection)])
+        {
+            imageLeftArrow = [imageLeftArrow imageFlippedForRightToLeftLayoutDirection];
+            imageRightArrow = [imageRightArrow imageFlippedForRightToLeftLayoutDirection];
+        }
+#ifdef __IPHONE_11_0
     }
+#endif
     
     //Previous button
     IQBarButtonItem *prev = toolbar.previousBarButton;
@@ -870,9 +954,17 @@
     
     //Fixed space
     IQBarButtonItem *fixed =[[IQBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    if (IQ_IS_IOS10_OR_GREATER) {
+            
+#ifdef __IPHONE_11_0
+    if (@available(iOS 10.0, *))
+#else
+    if (IQ_IS_IOS10_OR_GREATER)
+#endif
+    {
         [fixed setWidth:6];
-    } else {
+    }
+    else
+    {
         [fixed setWidth:20];
     }
     [items addObject:fixed];
@@ -900,7 +992,10 @@
     
     //Title button
     toolbar.titleBarButton.title = self.shouldHideToolbarPlaceholder?nil:titleText;
-    if (IQ_IS_IOS11_OR_GREATER == NO)
+#ifdef __IPHONE_11_0
+    if (@available(iOS 11.0, *)) {}
+    else
+#endif
     {
         toolbar.titleBarButton.customView.frame = CGRectZero;
     }
@@ -948,28 +1043,6 @@
 - (void)addPreviousNextRightOnKeyboardWithTarget:(id)target rightButtonTitle:(NSString*)rightButtonTitle previousAction:(SEL)previousAction nextAction:(SEL)nextAction rightButtonAction:(SEL)rightButtonAction
 {
     [self addPreviousNextRightOnKeyboardWithTarget:target rightButtonTitle:rightButtonTitle previousAction:previousAction nextAction:nextAction rightButtonAction:rightButtonAction titleText:nil];
-}
-
--(void)setEnablePrevious:(BOOL)isPreviousEnabled next:(BOOL)isNextEnabled
-{
-    //  Getting inputAccessoryView.
-    IQToolbar *inputAccessoryView = self.keyboardToolbar;
-    
-    if ([[inputAccessoryView items] count]>3)
-    {
-        //  Getting first item from inputAccessoryView.
-        IQBarButtonItem *prevButton = (IQBarButtonItem*)[inputAccessoryView items][0];
-        IQBarButtonItem *nextButton = (IQBarButtonItem*)[inputAccessoryView items][2];
-        
-        //  If it is UIBarButtonItem and it's customView is not nil.
-        if ([prevButton isKindOfClass:[IQBarButtonItem class]] && [nextButton isKindOfClass:[IQBarButtonItem class]])
-        {
-            if (prevButton.enabled != isPreviousEnabled)
-                [prevButton setEnabled:isPreviousEnabled];
-            if (nextButton.enabled != isNextEnabled)
-                [nextButton setEnabled:isNextEnabled];
-        }
-    }
 }
 
 @end

@@ -1,14 +1,14 @@
 PODS:
-  - IQKeyboardManager (4.0.12)
-  - SwipeCellKit (1.9.1)
+  - IQKeyboardManager (5.0.4)
+  - SwipeCellKit (2.0.0)
 
 DEPENDENCIES:
   - IQKeyboardManager
   - SwipeCellKit
 
 SPEC CHECKSUMS:
-  IQKeyboardManager: feb4562ba22266c179801a76228017f7a3c0d111
-  SwipeCellKit: e9ff953c820394a4e641cfb0118b6c959506aec2
+  IQKeyboardManager: 1df9c0f147af1681cfb2d9977bc30309d45a7e76
+  SwipeCellKit: 349c61ffde96ac3ae51c2691a03e421b5b29ee98
 
 PODFILE CHECKSUM: cdbad587950a587cd4cd09d78150f4bc2d50577e
 
