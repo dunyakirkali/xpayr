@@ -32,7 +32,7 @@ class ItemCell: SwipeTableViewCell {
             dateFormatter.locale = Locale.current
             expirationLabel.text = dateFormatter.string(from: (item?.expirationDate)!)
 
-            img.image = item?.image
+//            img.image = item?.image
         }
     }
     

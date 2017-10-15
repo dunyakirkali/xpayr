@@ -20,7 +20,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        item = Item(name: nil, image: nil, expirationDate: nil)
+        item = Item(name: nil, imagePath: nil, expirationDate: Date())
         field.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         picker.minimumDate = Date()
         picker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
@@ -45,7 +45,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        item?.image = image
+//        item?.image = image
         preview.image = image
         preview.isHidden = false
         dismiss(animated:true, completion: nil)

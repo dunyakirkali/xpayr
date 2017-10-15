@@ -8,6 +8,7 @@
 
 import UIKit
 import SwipeCellKit
+import Disk
 
 class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
@@ -16,11 +17,6 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     // MARK: - Properties
     var items: [Item]?
-    var filePath: String {
-        let manager = FileManager.default
-        let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
-        return (url!.appendingPathComponent("Data").path)
-    }
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -82,14 +78,18 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     // TODO: (dunyakirkali) Move to presenter
     private func saveData() {
-        NSKeyedArchiver.archiveRootObject(self.items ?? [], toFile: filePath)
+        do {
+            try Disk.save(items, to: .documents, as: "items.json")
+        } catch {
+            print("Could not save data")
+        }
     }
 
     // TODO: (dunyakirkali) Move to presenter
     private func loadData() {
-        if let ourData = NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [Item] {
-            items = ourData
-        } else {
+        do {
+            items = try Disk.retrieve("items.json", from: .documents, as: [Item].self)
+        } catch {
             items = [Item]()
         }
     }
