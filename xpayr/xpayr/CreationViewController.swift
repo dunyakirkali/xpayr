@@ -11,7 +11,7 @@ import Disk
 
 class CreationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: - Properties
-    var item: Item?
+    public var item: Item?
     var sticks: String = ""
 
     // MARK: - Outlets
@@ -22,10 +22,13 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        item = Item(name: nil, imagePath: nil, expirationDate: Date())
+        
         field.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         picker.minimumDate = Date()
         picker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
+        
+        field.text = item?.name
+        picker.date = item?.expirationDate ?? Date()
     }
 
     // MARK: - Actions

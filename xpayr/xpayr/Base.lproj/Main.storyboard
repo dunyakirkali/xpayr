@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" id="A9n-Qf-8PR">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="juR-8A-kjN">
                             <connections>
-                                <segue destination="h4z-tp-qgW" kind="show" id="tV3-F6-d6T"/>
+                                <segue destination="h4z-tp-qgW" kind="show" identifier="toForm" id="tV3-F6-d6T"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

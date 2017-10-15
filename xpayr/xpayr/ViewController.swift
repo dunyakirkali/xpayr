@@ -18,6 +18,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     // MARK: - Properties
     var items: [Item]?
+    var selectedItem: Item? = nil
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -49,6 +50,22 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 270
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        selectedItem = (items?[indexPath.row])!
+        performSegue(withIdentifier: "toForm", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC: CreationViewController = segue.destination as! CreationViewController
+        
+        if selectedItem != nil {
+            destVC.item = selectedItem
+        } else {
+            destVC.item = Item(name: nil, imagePath: nil, expirationDate: Date())
+        }
     }
 
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
