@@ -9,6 +9,7 @@
 import UIKit
 import SwipeCellKit
 import Disk
+import UserNotifications
 
 class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
@@ -66,6 +67,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     // TODO: (dunyakirkali) Move to presenter
     public func add(item: Item) {
         self.items?.append(item)
+        prepareNotification(for: item)
         saveData()
     }
 
@@ -98,6 +100,21 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         } catch {
             items = [Item]()
         }
+    }
+    
+    private func prepareNotification(for item: Item) {
+        let content: UNNotificationContent = item.notificationContent
+        let date = Date(timeIntervalSinceNow: 10)
+        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+        let identifier = "UYLLocalNotification"
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        let center = UNUserNotificationCenter.current()
+        center.add(request, withCompletionHandler: { (error) in
+            if let error = error {
+                print(error)
+            }
+        })
     }
 }
 

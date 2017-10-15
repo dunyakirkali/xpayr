@@ -9,12 +9,22 @@
 import Foundation
 import UIKit
 import Disk
+import UserNotifications
 
 class Item: Codable  {
     // MARK: - Properties
     var name: String?
     var imagePath: String?
     var expirationDate: Date
+    var notificationContent: UNNotificationContent {
+        get {
+            let content = UNMutableNotificationContent()
+            content.title = "\(name ?? "An item") is about to expire!"
+            content.body = "Buy some milk"
+            content.sound = UNNotificationSound.default()
+            return content
+        }
+    }
     
     // MARK: - Initializers
     init(name: String?, imagePath: String?, expirationDate: Date) {
