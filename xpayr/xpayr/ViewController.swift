@@ -27,7 +27,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        tableView.reloadData()
+        reloadWithAnimation()
     }
 
     // MARK: - UITableViewDataSource
@@ -73,7 +73,13 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     public func remove(at: Int) {
         self.items?.remove(at: at)
         saveData()
-        tableView.reloadData()
+        reloadWithAnimation()
+    }
+    
+    private func reloadWithAnimation() {
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesIn: range)
+        self.tableView.reloadSections(sections as IndexSet, with: .automatic)
     }
 
     // TODO: (dunyakirkali) Move to presenter

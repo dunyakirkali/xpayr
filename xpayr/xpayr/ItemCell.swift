@@ -8,6 +8,7 @@
 
 import UIKit
 import SwipeCellKit
+import Disk
 
 class ItemCell: SwipeTableViewCell {
 
@@ -32,7 +33,15 @@ class ItemCell: SwipeTableViewCell {
             dateFormatter.locale = Locale.current
             expirationLabel.text = dateFormatter.string(from: (item?.expirationDate)!)
 
-//            img.image = item?.image
+            guard let imgPath = item?.imagePath else {
+                return
+            }
+            
+            do {
+                img.image = try Disk.retrieve(imgPath, from: .documents, as: UIImage.self)
+            } catch {
+                print("Could not retrieve image")
+            }
         }
     }
     
