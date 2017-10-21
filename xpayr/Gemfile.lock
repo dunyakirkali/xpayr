@@ -68,5 +68,8 @@ PLATFORMS
 DEPENDENCIES
   cocoapods
 
+RUBY VERSION
+   ruby 2.4.0p0
+
 BUNDLED WITH
-   1.14.6
+   1.15.4
