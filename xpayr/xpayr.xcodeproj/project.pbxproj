@@ -169,7 +169,7 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2FBY22AJDG;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -408,12 +408,15 @@
 			baseConfigurationReference = 57B708A9C5632C0EEF0DFD0B /* Pods-xpayr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2FBY22AJDG;
 				INFOPLIST_FILE = xpayr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.xpayr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c76979a4-bcb3-42af-ac2d-38eff9db4b71";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development co.ahtung.xpayr";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -424,12 +427,16 @@
 			baseConfigurationReference = C0059196729BBE16D9F509A2 /* Pods-xpayr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2FBY22AJDG;
 				INFOPLIST_FILE = xpayr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.xpayr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "57c9b0dd-546c-4dc3-86ce-4fbc91fe8496";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore co.ahtung.xpayr";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
