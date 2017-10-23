@@ -53,11 +53,24 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
         selectedItem = (items?[indexPath.row])!
         performSegue(withIdentifier: "toForm", sender: self)
     }
     
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        guard orientation == .right else { return nil }
+        
+        let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
+            self.remove(at: indexPath.row)
+        }
+        
+        // customize the action appearance
+        deleteAction.image = UIImage(named: "delete")
+        
+        return [deleteAction]
+    }
+    
+    // MARK: - Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC: CreationViewController = segue.destination as! CreationViewController
         
@@ -67,22 +80,28 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
             destVC.item = Item(name: nil, imagePath: nil, expirationDate: Date())
         }
     }
-
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
-        guard orientation == .right else { return nil }
-
-        let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
-            self.remove(at: indexPath.row)
+    
+    @IBAction func unwindToItemList(sender: UIStoryboardSegue) {
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            if let sourceViewController = sender.source as? CreationViewController, let item = sourceViewController.item {
+                self.update(item: item, at: selectedIndexPath)
+            }
+        } else {
+            if let sourceViewController = sender.source as? CreationViewController, let item = sourceViewController.item {
+                self.add(item: item)
+            }
         }
-
-        // customize the action appearance
-        deleteAction.image = UIImage(named: "delete")
-        
-        return [deleteAction]
     }
-
+    
     // TODO: (dunyakirkali) Move to presenter
-    public func add(item: Item) {
+    private func update(item: Item, at: IndexPath) {
+//        self.items?.remove(at: )
+//        prepareNotification(for: item)
+        saveData()
+    }
+    
+    // TODO: (dunyakirkali) Move to presenter
+    private func add(item: Item) {
         self.items?.append(item)
         prepareNotification(for: item)
         saveData()

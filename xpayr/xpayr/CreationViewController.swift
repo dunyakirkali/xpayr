@@ -27,16 +27,20 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         picker.minimumDate = Date()
         picker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
         
-        field.text = item?.name
-        picker.date = item?.expirationDate ?? Date()
+        if let item = item {
+            field.text = item.name
+            picker.date = item.expirationDate
+            if let imgPath = item.imagePath {
+                do {
+                    preview.image = try Disk.retrieve(imgPath, from: .documents, as: UIImage.self)
+                } catch {
+                    print("Could not retrieve image")
+                }
+            }
+        }
     }
 
     // MARK: - Actions
-    @IBAction func saveItem(_ sender: AnyObject) {
-        let destinationVC: ViewController = self.navigationController?.viewControllers.first as! ViewController
-        destinationVC.add(item: item!)
-        self.navigationController?.popToRootViewController(animated: true)
-    }
 
     @IBAction func openCameraButton(sender: AnyObject) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
