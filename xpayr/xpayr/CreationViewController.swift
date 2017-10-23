@@ -33,6 +33,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
             if let imgPath = item.imagePath {
                 do {
                     preview.image = try Disk.retrieve(imgPath, from: .documents, as: UIImage.self)
+                    preview.isHidden = false
                 } catch {
                     print("Could not retrieve image")
                 }
