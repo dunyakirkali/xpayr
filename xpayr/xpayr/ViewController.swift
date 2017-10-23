@@ -18,7 +18,6 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     // MARK: - Properties
     var items: [Item]?
-    var selectedItem: Item? = nil
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -49,7 +48,6 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedItem = (items?[indexPath.row])!
         performSegue(withIdentifier: "toForm", sender: self)
     }
     
@@ -69,9 +67,9 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     // MARK: - Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC: CreationViewController = segue.destination as! CreationViewController
-        
-        if selectedItem != nil {
-            destVC.item = selectedItem
+
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            destVC.item = self.items?[selectedIndexPath.row]
         } else {
             destVC.item = Item(name: "", imagePath: nil, expirationDate: Date())
         }
