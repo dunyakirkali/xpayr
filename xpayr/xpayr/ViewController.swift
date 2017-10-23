@@ -28,10 +28,6 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         loadData()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        reloadWithAnimation()
-    }
-
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items!.count
@@ -61,7 +57,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         guard orientation == .right else { return nil }
         
         let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
-            self.remove(at: indexPath.row)
+            self.remove(at: indexPath)
         }
         
         // customize the action appearance
@@ -77,7 +73,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         if selectedItem != nil {
             destVC.item = selectedItem
         } else {
-            destVC.item = Item(name: nil, imagePath: nil, expirationDate: Date())
+            destVC.item = Item(name: "", imagePath: nil, expirationDate: Date())
         }
     }
     
@@ -88,38 +84,34 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
             }
         } else {
             if let sourceViewController = sender.source as? CreationViewController, let item = sourceViewController.item {
-                self.add(item: item)
+                let newIndexPath = IndexPath(row: items!.count, section: 0)
+                self.add(item: item, at: newIndexPath)
             }
         }
     }
     
     // TODO: (dunyakirkali) Move to presenter
     private func update(item: Item, at: IndexPath) {
-//        self.items?.remove(at: )
-//        prepareNotification(for: item)
+        self.items?[at.row] = item
+        tableView.reloadRows(at: [at], with: .none)
         saveData()
     }
     
     // TODO: (dunyakirkali) Move to presenter
-    private func add(item: Item) {
+    private func add(item: Item, at: IndexPath) {
         self.items?.append(item)
+        tableView.insertRows(at: [at], with: .automatic)
         prepareNotification(for: item)
         saveData()
     }
 
     // TODO: (dunyakirkali) Move to presenter
-    public func remove(at: Int) {
-        self.items?.remove(at: at)
+    public func remove(at: IndexPath) {
+        self.items?.remove(at: at.row)
+        tableView.deleteRows(at: [at], with: .fade)
         saveData()
-        reloadWithAnimation()
     }
     
-    private func reloadWithAnimation() {
-        let range = NSMakeRange(0, self.tableView.numberOfSections)
-        let sections = NSIndexSet(indexesIn: range)
-        self.tableView.reloadSections(sections as IndexSet, with: .automatic)
-    }
-
     // TODO: (dunyakirkali) Move to presenter
     private func saveData() {
         do {
