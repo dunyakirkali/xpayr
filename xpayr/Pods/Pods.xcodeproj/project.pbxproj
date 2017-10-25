@@ -7,232 +7,261 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C7C4175E12EF7E435B67BF9582DF99 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5316359DD7EFBB5ABAB41CFB42C43160 /* IQPreviousNextView.m */; };
-		02AB7B9AB21AD8EBB4D2016B247B6F4D /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90CA1CC470E2DEBAADF06AB238810E /* SwipeActionsView.swift */; };
-		04BC6C72900E853B804E7C3ADC9049A8 /* IQUIWindow+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 39BC97E80023D6616E9F8C0745C23C85 /* IQUIWindow+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06BD53457ED71ABB417ED97CC2FF9228 /* IQKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEB8DE0FE50A5F3E5030D19EFFD3DDC /* IQKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C25BF8CB3E93DD8F61CD9EFBBE0C794 /* SwipeTableOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B2EEB9303CCD6C3797B0BE1F95691 /* SwipeTableOptions.swift */; };
-		0DC3C31FD06C7533B431D24DFFD913B2 /* Pods-xpayr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F46BB2AF701480E392756B158363F279 /* Pods-xpayr-dummy.m */; };
-		0F40D6CEA9466B1CE30358B27EB84037 /* CardGroupSliding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55875445FE10C32FF95C3F9EE89FF174 /* CardGroupSliding.swift */; };
-		1272F071D11EFD3133246140B9A8130D /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 949538B4ADC2D3B42B3A3293720BAB55 /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		155278697DE95FE85991CE469BE2935B /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBF9D0CEE4786B2B27670954C97D62E /* Disk+Codable.swift */; };
-		1F45E0C395703F6193E11C1B5569C7E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		1FAF936145744EF7FBEBD2B1CCF20430 /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 32F3A48BDD81C982E245D81978B7053D /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2698FFB3FB651DE9FEA8821FF3E3A256 /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = B8BBA34861D7C965CBAA3F92427329D3 /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C3810EA6835375432A233E79C028A4F /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7C997F4183A79270D65C724F710082 /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CA45B0F7175C884633BBE0ADEA5AC9E /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6E47428100A6C4F044A6EDABDB0EE /* IQUIView+IQKeyboardToolbar.m */; };
-		33F332BD847D16731F53DE7AA81C93A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
-		3CC781A8EE90E5704B824F84AF260185 /* SwipeTableViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0D389D5CABBBB0389A2FE15F34DF5 /* SwipeTableViewCell+Display.swift */; };
-		3DD5A26B210989F539F9ECFFB69DE28C /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E11E3CB7B696D5FD2795E9F82182471 /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FCD789B6A627D64A9D5FF0AC2CB61DD /* SwipeTableViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679F5F8C06E940DFDEFFC226ED520F27 /* SwipeTableViewCell+Accessibility.swift */; };
-		43BD87FE2A4B628E1D72CB2F3DC45F9F /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11EEB774ABC6FF771551D18544DD66 /* IQToolbar.m */; };
-		443346908A8190FBBBB34B1FA593EB54 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A8D4194A3F46888BE2CCF994F62205 /* IQKeyboardReturnKeyHandler.m */; };
-		467EC8435B954B1F078E6084032231B9 /* SwipeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A34ED06B884C4AD9602BE3BE7695E /* SwipeActionButton.swift */; };
-		4684DE919CC6D626CDB24611D4981881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		4B49FC52B69851F117C49AA94C01B337 /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C64CDDE955E1C8ACD938955256EB771 /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4EFC7FF2EF833EFF8478477A7C9A5497 /* CardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8315801A698D1EBF5247D30942D3067 /* CardGroup.swift */; };
-		50819958178AD5637A7ACC1F2F90D301 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */; };
-		50CBA916F82A5B7DE637EACAAF131EB6 /* Pods-xpayr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41155453EAD9E6B91D7821EC2EF8F727 /* Pods-xpayr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5337BC4C83A056BD8023DA78F0B92E77 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A40CA74E32E3C60ACA4475B4DF79EC7A /* IQBarButtonItem.m */; };
-		5389710D30B91468802ABAEA770AD1F6 /* Player_by_Patric_Piemonte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008A423AD6986B8F67B41187CCF7DF15 /* Player_by_Patric_Piemonte.swift */; };
-		54B4D9D1D7107638B4E79C329028CC10 /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F63567C0A762828BBF8F2F4B3A427F /* Disk+[UIImage].swift */; };
-		55AA601B4FB9DBC77E46B1CEACC805DA /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A0BE5F691D89994D8C616C3E12889120 /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5747A4944283AD31F2B7B5BFE2C1AEBC /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AA1722FCF0301733E84B42E1643ABC /* SwipeAnimator.swift */; };
-		57F5F0E4502788A2CA95F2B30D4AFCE3 /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD1EF675D15A3390198DA665417762 /* Disk+Helpers.swift */; };
-		6254CF91EB337A7E033BB96EF7FE423D /* SwipeTransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E1CFF24975B95EE720953B856AD4B /* SwipeTransitionLayout.swift */; };
-		672ECBE1AD25E837DE570E5C6EB01D47 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 152899FB2FA981C05CD4E2B980285549 /* IQTextView.m */; };
-		688492F9DF7DDE0989AEBFA367FBEC33 /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = B06059CD47C9E414D3ED2B7D991182D9 /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C1EF0169B5B314206686D597368EB05 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 798CAAF6C7B3E8D9D08ADDF0E51F1176 /* IQUITextFieldView+Additions.m */; };
-		6F0B2BE8EB0273B15DD59ADA5CE3912B /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CC84EF563ED05846ED538D955AA25 /* Disk.swift */; };
-		7035709F9D020AD401C2B19B6598F2FE /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FC031F252F33A9BA3EF1908635EB0B08 /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		749DF54A76C1CF341463F66D80E8208B /* SwipeActionTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAAF6A1FB7DE0E1C9BAF41313A317F3 /* SwipeActionTransitioning.swift */; };
-		750EDA365066D4B85047B0D0F1664169 /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262FA1557AA8D47AEB47424FDC7EF3C9 /* Swipeable.swift */; };
-		79DCCBCE8E0D7E991EE20614C1BB745C /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5972D35728BD598FDFBD69F2931D9 /* SwipeAction.swift */; };
-		7AF7B0DAC79120D5532FC387A34927FF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316FB365279713C68491FF71DC20182 /* Extensions.swift */; };
-		7DD82A159879063584B82B1AB8F9D451 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67744B6608121687DE8377E97120A686 /* IQUIView+Hierarchy.m */; };
-		843C45E4A6B05D1D93C81DD5B098CE4C /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF035319BE000202B415C9D0C025EBBF /* IQKeyboardManager.m */; };
-		863288DB4FB9DC2F1F72C62A6FB767DA /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E68D32207435ACDA7BD4B9D92199AA /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		879E43C92A05A87441A67F3C4E33FDEF /* SwipeCellKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7922844F246CC9C841EF925C0B24013 /* SwipeCellKit-dummy.m */; };
-		87CF22D207D6D38A8FEA9F8C12975BCA /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18934F082CB8BD1826C0C589C957492 /* Disk+UIImage.swift */; };
-		8ACFE85614AFCD6370FF2E1B457812F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
-		906BF2D00B5C46CB5C22C1547026058B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44532653A3A55C9F300CDE36D82D370 /* Card.swift */; };
-		95A2EEB9C10342692B1D37AF7DC7444C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		983540427AEC05CB5551DF0C6CB7D5B1 /* CardPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6D56FAF91E8E0D897D6002FD040B5 /* CardPlayer.swift */; };
-		9B8578CF6065F8E210E5DB4C95332ACE /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4807AAA05FDAC412AFB0C29B428989 /* IQTitleBarButtonItem.m */; };
-		9EE4EB9DD009BFFC70B492AC19DDA5DE /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8890FE2D4779D745B73AF622829496 /* IQKeyboardManager-dummy.m */; };
-		9F8D2F50011085DAA8C21A3B26A72ABD /* SwipeCellKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D04C7A6A6869791B7880FD93DD4D0D /* SwipeCellKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1117755DDA279216CAACBD6609A58CB /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF23648CEB820A67DE769C16CDCC5AB /* IQUIViewController+Additions.m */; };
-		A1150A5AFC85414D7851B5C038F4559E /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 475377275C0846EC718D1842F5F60493 /* IQUIScrollView+Additions.m */; };
-		A824EDC611882627501A32F54D6B6219 /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = C304B0158F5B867A8ABB90C0620DC205 /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8F909B39333B28D10A25EFC8F6206AF /* Disk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F87113FEA200EB8ECF5BFD94EC6E77C /* Disk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA90965E750E4AC7B90CA1ADFC657826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		AFB5D8FF4B69C0B8E2CC2D2D61DDAD64 /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3CDD1E0D7B8E67B881E89BCCC74103 /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFB5DF952786BEE60F3F6FE3EFD2CF32 /* Disk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 868D235B5F12C3CBEB9733978B5ADA6C /* Disk-dummy.m */; };
-		B389F193C856F168B09FF64C805EAD4D /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01257C37977DBC144FAE7244A20A81 /* Disk+Errors.swift */; };
-		B42A9495A77E2359F87812387353E210 /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CA42149182C72B9E93CA13ECA5864755 /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD33AB6E11B2B727B013EB8376BDB30D /* Cards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E0F1A2D15247F65A433FD234BBFE98 /* Cards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE8B20C4EB234EF3A9DADB0365221E6D /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3374C66D3B8B7FE714A0D63B05FAB7B /* IQKeyboardManager.bundle */; };
-		C263877B44D44244DCEC11C8AA4955AD /* CardArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09264FEC8C9B7524B94E2233199E682 /* CardArticle.swift */; };
-		C90319AD1CBE6A1562D75FCDBEBBA5E0 /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E49236B7F2E4C12343893CA7A4DFB /* Disk+InternalHelpers.swift */; };
-		C9187E0C479F6E619EEB229AFD7F775A /* CardHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3382A2397783E9BDE29D396598CE760F /* CardHighlight.swift */; };
-		C95E7903AF56181674866AFFB954C830 /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = E8D307704FA1CFCAB9E1C8770C70CF85 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CD29C12D4D084E694D9A348198CF6611 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 927187BE1B54F4BC0B9F0131A2DDE279 /* IQNSArray+Sort.m */; };
-		D07E90D53C84BDDC195D61477987A041 /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDA3783B7CEBA9E674B3E4F230F50 /* SwipeTableViewCell.swift */; };
-		D2CC2D6DAD0F3D1426794BFA9DF3318B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		D2DFA56FF1C87CE27808A2975D8C1D15 /* Cards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AF9AF92596730CAF11DC61A88F1666 /* Cards-dummy.m */; };
-		D5426D24FACD6E34D5B83FC867EF7EAD /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725BE213C8E8A16F13D75583AC6AF14 /* Disk+Data.swift */; };
-		D61B94713DB5A9DD178198CB226E8CE7 /* SwipeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA751DFA70E5148DD28DF2868374AC94 /* SwipeTableViewCellDelegate.swift */; };
-		E450FB46407E6CA4F6B362B7C243E279 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6D6FE0F51AFCC9B8516F5B85A838E0 /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEC58E9F92789CE9F44909BFA6592BF4 /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB700D7DFF6C014ED302564D6CCBB9B /* Disk+[Data].swift */; };
-		EEF0930DC9A866CA97209104C3BDE95D /* Disk.h in Headers */ = {isa = PBXBuildFile; fileRef = 50EB3B34E1BCBE079E0B5A05CA5D003E /* Disk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F138D47E78EB875A53715B233BB93CDD /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C6F6A65FF0FE8F47A54C305728293 /* Disk+VolumeInformation.swift */; };
-		F2D0C49E2158673FE84E46B5B3EBE33F /* SwipeExpansionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF72CD14BB670CC5DC9F0A4DCAB3E8 /* SwipeExpansionStyle.swift */; };
-		F4A44D3ED358E7E359FD2B0CE7E0FB3E /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB38550B2CA5D477F129372F46BB0DE /* IQUIWindow+Hierarchy.m */; };
-		FACC48A05AB79FAE5C8ADAC8D55EA86B /* SwipeFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CEC4A775B028E5D7317C7C71E3CDD9 /* SwipeFeedback.swift */; };
-		FC17098A548F6DFC5423004B6C8B1F43 /* SwipeExpanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0268BE880ED4052A7062C2578AA5E43A /* SwipeExpanding.swift */; };
+		01C7C4175E12EF7E435B67BF9582DF99 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 585A3072FA2F9E6E95FA69926881FD24 /* IQPreviousNextView.m */; };
+		046FF569FFF266C0292CF8FD65FFE960 /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69819A1ED0C22DCB66A987EA9AC7EB /* SwipeActionsView.swift */; };
+		04BC6C72900E853B804E7C3ADC9049A8 /* IQUIWindow+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = A656F0A26974ACA6806EB6807B52DBC7 /* IQUIWindow+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06BD53457ED71ABB417ED97CC2FF9228 /* IQKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E34597A7BDB59EB66C0EFB4C025E7B0 /* IQKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FF281FFD9D868B5DF2C322B33420D41 /* SwipeActionTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BE118AF378F39F06DA54825347217D /* SwipeActionTransitioning.swift */; };
+		1272F071D11EFD3133246140B9A8130D /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = F0ECF8EFED68ECD46252331074AF7B12 /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		155278697DE95FE85991CE469BE2935B /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43AB3A460A4E5F963B91B2F13BBD51 /* Disk+Codable.swift */; };
+		15E7D3B883475F50354A90D685892645 /* SwipeTableViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B0922B5CB80945D4A8071FF13203D /* SwipeTableViewCell+Accessibility.swift */; };
+		196930417D48833DEB7CBE422AC3A616 /* SwipeExpansionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4448A26419EE3871AAC7C2A84316E4 /* SwipeExpansionStyle.swift */; };
+		1D697D3FF7C9E7BC3AAC730C7065479F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EBCFECF5474E77BE8CBEFCF5C5653D /* Foundation.framework */; };
+		1DD9C38A3E31DAEADD4B9ACC5425E22D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4AEF4CA425F1BD20DCF09644236815 /* Extensions.swift */; };
+		1FAF936145744EF7FBEBD2B1CCF20430 /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD9984F5CD80286F99EE76965726234 /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2698FFB3FB651DE9FEA8821FF3E3A256 /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 443416732F601073197981E9A91A55BB /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BEA1EED941F1256FDD075165AF9FBF2 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEF02D05DA1B2D986E66598FEFAE17 /* SwipeAction.swift */; };
+		2C3810EA6835375432A233E79C028A4F /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C127DE2EB24CE99F204A0325F356F1E /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CA45B0F7175C884633BBE0ADEA5AC9E /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AC1E386027CD08C16CEC41838320D /* IQUIView+IQKeyboardToolbar.m */; };
+		30F0779EA636ABAFD6D8E3D3010B9A1D /* Cards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA61A8842A6E02BF914847BD06EF0F0 /* Cards-dummy.m */; };
+		31B6B69A24982C288E27452037D3B008 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F2C0D6761F62BFD3DEBA83AE241AA6 /* Card.swift */; };
+		33F332BD847D16731F53DE7AA81C93A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7761F3B3CEB6BE8B4EF810F4FB681FE2 /* QuartzCore.framework */; };
+		35D4B5B4996012813B63CA1EB822F5A7 /* CardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61943FF523C66A114E5EBE2AEAA6FB3 /* CardGroup.swift */; };
+		363DC09E72BEED46F800A9250AB486DD /* SwipeCellKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4192004F9046406242C148635D615A65 /* SwipeCellKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3670A18804A88A0B6778C3631CB00860 /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD3D43030B800FCDFE12D0E713CA6D /* SwipeAnimator.swift */; };
+		3DD5A26B210989F539F9ECFFB69DE28C /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9566603DA1C6E15D4B6205A6FE123C49 /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41D0E42227B6010F9BBA2696BABCD11D /* SwipeTransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADC5FC3B800D41CAE5EBE988397334 /* SwipeTransitionLayout.swift */; };
+		43BD87FE2A4B628E1D72CB2F3DC45F9F /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D74EB31BBBC6B5CF6203BB319169947 /* IQToolbar.m */; };
+		443346908A8190FBBBB34B1FA593EB54 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CAD3C588C7089713037125988D5AF7 /* IQKeyboardReturnKeyHandler.m */; };
+		4659ED112D7BB8865FD9161A3CF927A4 /* SwipeCellKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5690D3FC0BC243AF29F65DC8FB0FE /* SwipeCellKit-dummy.m */; };
+		4684DE919CC6D626CDB24611D4981881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EBCFECF5474E77BE8CBEFCF5C5653D /* Foundation.framework */; };
+		4B49FC52B69851F117C49AA94C01B337 /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF72F5B06B5627BF1EE2B0A68E4BB89 /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C9CC422A0D7C2CE3BD29EFCB165F899 /* Cards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EF8D83BA5EA1E07E4B59E5403581B4 /* Cards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F4E5151CA3EB41CCDD12AFB89B9CB54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD344FDDE209D2CAD440B057C2E9365 /* UIKit.framework */; };
+		50819958178AD5637A7ACC1F2F90D301 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7284CDBAD87AD8317B888173AB38C59D /* CoreGraphics.framework */; };
+		5337BC4C83A056BD8023DA78F0B92E77 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C29101E028EFA9F9B05AB6E9AB343F4 /* IQBarButtonItem.m */; };
+		54B4D9D1D7107638B4E79C329028CC10 /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = E39147990DBD4502CF5441639583ED84 /* Disk+[UIImage].swift */; };
+		55AA601B4FB9DBC77E46B1CEACC805DA /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 15565D1DD4B6B454B519A0DCA5A9DB7D /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57F5F0E4502788A2CA95F2B30D4AFCE3 /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2311B2508CD403310CB99E7463751E35 /* Disk+Helpers.swift */; };
+		672ECBE1AD25E837DE570E5C6EB01D47 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926356E210C75A1CF19A1355792D9BC /* IQTextView.m */; };
+		688492F9DF7DDE0989AEBFA367FBEC33 /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2017C5143897ED534D616B8AFE8576 /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C1EF0169B5B314206686D597368EB05 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 186612564E39389E9C5E755134661714 /* IQUITextFieldView+Additions.m */; };
+		6F0B2BE8EB0273B15DD59ADA5CE3912B /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3505109477F7D4968066A074A76171C /* Disk.swift */; };
+		7035709F9D020AD401C2B19B6598F2FE /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B525AC8C48748A9B4F0E3EDC45ECE1 /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		751F10C05FCCFB3F785D5EF6A84272F8 /* SwipeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B40504E261718A749FD07F33BCE74 /* SwipeTableViewCellDelegate.swift */; };
+		76532D26E025EB0304F69B96AA700A96 /* Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EB404CB7853FCDF463AB5E3A22BF19 /* Player.framework */; };
+		7B4CCA2A4ED649512F9698EDB43BEEDC /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4849D0ABA95B737F3F38CED33A834067 /* Swipeable.swift */; };
+		7DD82A159879063584B82B1AB8F9D451 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D1BC55D2F1E45177A71EBCDDA41AA6 /* IQUIView+Hierarchy.m */; };
+		843C45E4A6B05D1D93C81DD5B098CE4C /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E1369D2BB897A96773EDC62F7442D8 /* IQKeyboardManager.m */; };
+		863288DB4FB9DC2F1F72C62A6FB767DA /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E913CC2FEEF4A25BA47AC03C8310C4D /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8660DBE8FA37A4C7E282296CE0120FB6 /* SwipeExpanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E6D2C0FB6169F4D200F71EBAC5409 /* SwipeExpanding.swift */; };
+		87CF22D207D6D38A8FEA9F8C12975BCA /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B63C1661A47A5E59272BF9EB56D86 /* Disk+UIImage.swift */; };
+		8ACFE85614AFCD6370FF2E1B457812F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD344FDDE209D2CAD440B057C2E9365 /* UIKit.framework */; };
+		8B624C5A65233DA21DDBD12A46A44F5C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47E9D8528E16E940CC58644788A5134 /* Player.swift */; };
+		9B8578CF6065F8E210E5DB4C95332ACE /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 381BFA60FD874F613B9F7EA8E0A17248 /* IQTitleBarButtonItem.m */; };
+		9EE4EB9DD009BFFC70B492AC19DDA5DE /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B06AEEF015EB948BCEBCF3046432705 /* IQKeyboardManager-dummy.m */; };
+		9FC661A5F4EA790951C89F2FD12E9D38 /* CardArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605F038E601344BB41E3C817FF5FB3B0 /* CardArticle.swift */; };
+		A1117755DDA279216CAACBD6609A58CB /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CD5DA1B04D41F93BF3560D881CF593 /* IQUIViewController+Additions.m */; };
+		A1150A5AFC85414D7851B5C038F4559E /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 438CB44A545F71695A87EC19E8D889DD /* IQUIScrollView+Additions.m */; };
+		A1C04410E4C796786415FD29560A6946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EBCFECF5474E77BE8CBEFCF5C5653D /* Foundation.framework */; };
+		A4F40E29F3D06F8988151B8E1F43DDCA /* SwipeTableOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B64C6FC100A41218B565BFEB77ED2E /* SwipeTableOptions.swift */; };
+		A65998A12AE524B88C6E2B9B028EE944 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EBCFECF5474E77BE8CBEFCF5C5653D /* Foundation.framework */; };
+		A824EDC611882627501A32F54D6B6219 /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = CD078BA373D1A84DBD1522BA5EADAD6E /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8AE63C63FB2B5B8033566E5938B6596 /* CardHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1986B4FD048B6E8F4F5A1FDBFE6BD5 /* CardHighlight.swift */; };
+		A8F909B39333B28D10A25EFC8F6206AF /* Disk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F398675D8520409E25B82210FE243D /* Disk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9FA00C34A353D8BCC7D511F02F97C28 /* SwipeTableViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB27AA3A60914E5CC6B4B1F2671192B /* SwipeTableViewCell+Display.swift */; };
+		AE7B22FDBC7ADF8F01095EC7074FC23B /* Player-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC624841E7AAB9DB19D83DB0C3D97CD /* Player-dummy.m */; };
+		AFB5D8FF4B69C0B8E2CC2D2D61DDAD64 /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = EC589600650F47220C8BE71DAB1363DD /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFB5DF952786BEE60F3F6FE3EFD2CF32 /* Disk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A6F8F483AE79513238A9E890A0B347 /* Disk-dummy.m */; };
+		B389F193C856F168B09FF64C805EAD4D /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AA64E4EBFF017B530F3D6159F95D7B /* Disk+Errors.swift */; };
+		B42A9495A77E2359F87812387353E210 /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C900D14D235F18157422F5B81DBE92 /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBEBB428CC404148BC02E660E85A2851 /* Pods-xpayr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F46BB2AF701480E392756B158363F279 /* Pods-xpayr-dummy.m */; };
+		BE8B20C4EB234EF3A9DADB0365221E6D /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C1E1FE4F6B397D66892E87584C0C9A82 /* IQKeyboardManager.bundle */; };
+		C004C64F2F12AF7914A98BB30102B2D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EBCFECF5474E77BE8CBEFCF5C5653D /* Foundation.framework */; };
+		C90319AD1CBE6A1562D75FCDBEBBA5E0 /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF022F7EC7EC12A51006D5DD40B983 /* Disk+InternalHelpers.swift */; };
+		C95E7903AF56181674866AFFB954C830 /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = EA52569BCE81BD08BFEF355EBE4AD255 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD29C12D4D084E694D9A348198CF6611 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 645522650538D8B653891D060395BC01 /* IQNSArray+Sort.m */; };
+		CD986010254B1BB67A6D5F4EA72CC9FD /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4B0BA7C1C43679878E8B932D9B0315 /* LayoutHelper.swift */; };
+		D2CC2D6DAD0F3D1426794BFA9DF3318B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EBCFECF5474E77BE8CBEFCF5C5653D /* Foundation.framework */; };
+		D5426D24FACD6E34D5B83FC867EF7EAD /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6A672435DD616F483E45F05B511F76 /* Disk+Data.swift */; };
+		DA54B9DCF1529B059B32DCEE18679E98 /* SwipeFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549CA2F38F0851DB675645A041D48DF /* SwipeFeedback.swift */; };
+		DC10C29C53056C6547794476D9434777 /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F1576FDF7EF79716A6E3736E8CDEA2 /* SwipeTableViewCell.swift */; };
+		E0C5B751E1C94120A7A399264CC5E5CA /* SwipeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FDA96076FE4111B72415633F529F44 /* SwipeActionButton.swift */; };
+		E3C93AF579B04A95B3CEB394A224B864 /* CardGroupSliding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADA603A67209FCA20AB5EB35044E72 /* CardGroupSliding.swift */; };
+		E450FB46407E6CA4F6B362B7C243E279 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C085FAF27868F221FDD1BC644CE68F2 /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECF60C4F80ACF2A6CE8D233B895EEF6A /* Player-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C143FFAB9EA0CBA434647F87221202 /* Player-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC58E9F92789CE9F44909BFA6592BF4 /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A88013EC6E1AF8CDCBC5C113D3FC9 /* Disk+[Data].swift */; };
+		EEF0930DC9A866CA97209104C3BDE95D /* Disk.h in Headers */ = {isa = PBXBuildFile; fileRef = 412E7B37A636703168699827E9CF5010 /* Disk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F138D47E78EB875A53715B233BB93CDD /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED1675CD0EB92E88BB02E2AF64A4B48 /* Disk+VolumeInformation.swift */; };
+		F274CA356096045B4DCA96D433B32269 /* CardPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91DBA6D415AA665AF174344DBDBA11 /* CardPlayer.swift */; };
+		F4A44D3ED358E7E359FD2B0CE7E0FB3E /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 984554774649D41F3F38CE8F234FB8EC /* IQUIWindow+Hierarchy.m */; };
+		FCEB6189C870995F504B925E02DC4378 /* Pods-xpayr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41155453EAD9E6B91D7821EC2EF8F727 /* Pods-xpayr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		67DB6BE84B1500E012B51E9F09FC4014 /* PBXContainerItemProxy */ = {
+		0EB88B3BB378293712A5DF3CECFB7A4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 279AA6726F52A334C45E85774BD21A3D;
-			remoteInfo = IQKeyboardManager;
+			remoteGlobalIDString = 964049909C75EBC6A7F5B7FDCE4D6BF7;
+			remoteInfo = Player;
 		};
-		75E183BD38047A8FC5997AE53919884C /* PBXContainerItemProxy */ = {
+		385BC41EEC6B3BE55B6A15D898DF26C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 964049909C75EBC6A7F5B7FDCE4D6BF7;
+			remoteInfo = Player;
+		};
+		726083F67D15D961194A2DFBCC2EB658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B29B68271697A03B932F28BA3A901F4;
+			remoteInfo = SwipeCellKit;
+		};
+		7748317CE97062BEF2EFC33BEB56379C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1691E754022217B52671D98A23731A08;
 			remoteInfo = Disk;
 		};
-		C2D4C545C4BE3452C0FC8B71CA3CF7AC /* PBXContainerItemProxy */ = {
+		AF3105A8EA566D763CB22E1222CE6034 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0497D11A44EF9DA6E2E0F60BE9D158A7;
-			remoteInfo = SwipeCellKit;
+			remoteGlobalIDString = 279AA6726F52A334C45E85774BD21A3D;
+			remoteInfo = IQKeyboardManager;
 		};
-		C4FD559254A42644F4D0C687886F8B78 /* PBXContainerItemProxy */ = {
+		DDE67AD55A848B28219DEC3A84C85F6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 829A6F701360CC3F91CF141B378CF1B5;
+			remoteGlobalIDString = 1B91CA4773AECD154171A27CEE93017A;
 			remoteInfo = Cards;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008A423AD6986B8F67B41187CCF7DF15 /* Player_by_Patric_Piemonte.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Player_by_Patric_Piemonte.swift; path = Cards/Player_by_Patric_Piemonte.swift; sourceTree = "<group>"; };
-		01266EA61C2EB12FAA558FEAA2B52FCA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0268BE880ED4052A7062C2578AA5E43A /* SwipeExpanding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpanding.swift; path = Source/SwipeExpanding.swift; sourceTree = "<group>"; };
-		0B6D6FE0F51AFCC9B8516F5B85A838E0 /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
-		152899FB2FA981C05CD4E2B980285549 /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
-		177B2EEB9303CCD6C3797B0BE1F95691 /* SwipeTableOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableOptions.swift; path = Source/SwipeTableOptions.swift; sourceTree = "<group>"; };
-		19F65CA29B130563114B66C21B396E10 /* SwipeCellKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-prefix.pch"; sourceTree = "<group>"; };
-		1DBF9D0CEE4786B2B27670954C97D62E /* Disk+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Codable.swift"; path = "Sources/Disk+Codable.swift"; sourceTree = "<group>"; };
-		1EE167BD1B8D576A398CEF9013D9646E /* Cards.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cards.modulemap; sourceTree = "<group>"; };
-		262FA1557AA8D47AEB47424FDC7EF3C9 /* Swipeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swipeable.swift; path = Source/Swipeable.swift; sourceTree = "<group>"; };
-		28836A8405766E104629F215BDDB40D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F11EEB774ABC6FF771551D18544DD66 /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
-		2F6995AEFB834120DC5292D528558B0B /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
-		2F87113FEA200EB8ECF5BFD94EC6E77C /* Disk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-umbrella.h"; sourceTree = "<group>"; };
-		323BD45E71C8328BD43FBF51DEFDA935 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManager.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		32F3A48BDD81C982E245D81978B7053D /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		01FDA96076FE4111B72415633F529F44 /* SwipeActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionButton.swift; path = Source/SwipeActionButton.swift; sourceTree = "<group>"; };
+		089B63C1661A47A5E59272BF9EB56D86 /* Disk+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+UIImage.swift"; path = "Sources/Disk+UIImage.swift"; sourceTree = "<group>"; };
+		09EB404CB7853FCDF463AB5E3A22BF19 /* Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C127DE2EB24CE99F204A0325F356F1E /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
+		0DC508B7B2B6C361733B7ECD1F67CD11 /* Cards-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cards-prefix.pch"; sourceTree = "<group>"; };
+		0E34597A7BDB59EB66C0EFB4C025E7B0 /* IQKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
+		0ED1675CD0EB92E88BB02E2AF64A4B48 /* Disk+VolumeInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+VolumeInformation.swift"; path = "Sources/Disk+VolumeInformation.swift"; sourceTree = "<group>"; };
+		100A88013EC6E1AF8CDCBC5C113D3FC9 /* Disk+[Data].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[Data].swift"; path = "Sources/Disk+[Data].swift"; sourceTree = "<group>"; };
+		128D354493BFD5F318DFF7308B664830 /* Player.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Player.modulemap; sourceTree = "<group>"; };
+		15565D1DD4B6B454B519A0DCA5A9DB7D /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
+		15DA388EA737612E26EC6F7919115D9B /* Disk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Disk.xcconfig; sourceTree = "<group>"; };
+		185AC1E386027CD08C16CEC41838320D /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		186612564E39389E9C5E755134661714 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		1C4AEF4CA425F1BD20DCF09644236815 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
+		1D74EB31BBBC6B5CF6203BB319169947 /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
+		1E3AF17B01D7445BED640BAA7B5E9B64 /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
+		2311B2508CD403310CB99E7463751E35 /* Disk+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Helpers.swift"; path = "Sources/Disk+Helpers.swift"; sourceTree = "<group>"; };
+		26BE118AF378F39F06DA54825347217D /* SwipeActionTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionTransitioning.swift; path = Source/SwipeActionTransitioning.swift; sourceTree = "<group>"; };
+		2B06AEEF015EB948BCEBCF3046432705 /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
+		2C085FAF27868F221FDD1BC644CE68F2 /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
+		2DBF022F7EC7EC12A51006D5DD40B983 /* Disk+InternalHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+InternalHelpers.swift"; path = "Sources/Disk+InternalHelpers.swift"; sourceTree = "<group>"; };
+		2E43AB3A460A4E5F963B91B2F13BBD51 /* Disk+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Codable.swift"; path = "Sources/Disk+Codable.swift"; sourceTree = "<group>"; };
+		2E913CC2FEEF4A25BA47AC03C8310C4D /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		2EF8F28E5E2FE97237EF786CBFEF93FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C900D14D235F18157422F5B81DBE92 /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
 		332C4F0CBC7782961D7B005393C5D983 /* Pods-xpayr-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-xpayr-resources.sh"; sourceTree = "<group>"; };
-		3382A2397783E9BDE29D396598CE760F /* CardHighlight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardHighlight.swift; path = Cards/CardHighlight.swift; sourceTree = "<group>"; };
-		391C95809D43EDC2954DBA49DC09852E /* Cards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cards.framework; path = Cards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39BC97E80023D6616E9F8C0745C23C85 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIWindow+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
-		3D730ED0D022EBD2C7538275EFC2BA1F /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
-		3E098124E3CC8F90869D3490DD8B5CF0 /* Cards-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cards-prefix.pch"; sourceTree = "<group>"; };
+		337A0021EEAC7C7EDF146CA75DE06D71 /* Cards.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cards.xcconfig; sourceTree = "<group>"; };
+		381BFA60FD874F613B9F7EA8E0A17248 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		3A2017C5143897ED534D616B8AFE8576 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		3E4B0BA7C1C43679878E8B932D9B0315 /* LayoutHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutHelper.swift; path = Cards/Sources/LayoutHelper.swift; sourceTree = "<group>"; };
+		3EA61A8842A6E02BF914847BD06EF0F0 /* Cards-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cards-dummy.m"; sourceTree = "<group>"; };
+		3EBA1F30CF3B032FE0A8F681D02023E4 /* Player-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Player-prefix.pch"; sourceTree = "<group>"; };
 		41155453EAD9E6B91D7821EC2EF8F727 /* Pods-xpayr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-xpayr-umbrella.h"; sourceTree = "<group>"; };
-		41AF9AF92596730CAF11DC61A88F1666 /* Cards-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cards-dummy.m"; sourceTree = "<group>"; };
-		470BDA3783B7CEBA9E674B3E4F230F50 /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCell.swift; path = Source/SwipeTableViewCell.swift; sourceTree = "<group>"; };
-		475377275C0846EC718D1842F5F60493 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
-		4C64CDDE955E1C8ACD938955256EB771 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
-		4E11E3CB7B696D5FD2795E9F82182471 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
-		4E4807AAA05FDAC412AFB0C29B428989 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
-		4F8890FE2D4779D745B73AF622829496 /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
-		4FDD1EF675D15A3390198DA665417762 /* Disk+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Helpers.swift"; path = "Sources/Disk+Helpers.swift"; sourceTree = "<group>"; };
-		50EB3B34E1BCBE079E0B5A05CA5D003E /* Disk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Disk.h; path = Sources/Disk.h; sourceTree = "<group>"; };
-		5316359DD7EFBB5ABAB41CFB42C43160 /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
-		542E250B94A30C61A245CBC80A4BF032 /* Disk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-prefix.pch"; sourceTree = "<group>"; };
-		55875445FE10C32FF95C3F9EE89FF174 /* CardGroupSliding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardGroupSliding.swift; path = Cards/CardGroupSliding.swift; sourceTree = "<group>"; };
-		57C6D56FAF91E8E0D897D6002FD040B5 /* CardPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardPlayer.swift; path = Cards/CardPlayer.swift; sourceTree = "<group>"; };
-		600D6172784C2172908113039EF06D4A /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
-		62D04C7A6A6869791B7880FD93DD4D0D /* SwipeCellKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-umbrella.h"; sourceTree = "<group>"; };
+		412E7B37A636703168699827E9CF5010 /* Disk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Disk.h; path = Sources/Disk.h; sourceTree = "<group>"; };
+		4192004F9046406242C148635D615A65 /* SwipeCellKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-umbrella.h"; sourceTree = "<group>"; };
+		438CB44A545F71695A87EC19E8D889DD /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		443416732F601073197981E9A91A55BB /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		45A6F8F483AE79513238A9E890A0B347 /* Disk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Disk-dummy.m"; sourceTree = "<group>"; };
+		4659FC3F0906B3663B8D2DC64B566D01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4849D0ABA95B737F3F38CED33A834067 /* Swipeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swipeable.swift; path = Source/Swipeable.swift; sourceTree = "<group>"; };
+		490B40504E261718A749FD07F33BCE74 /* SwipeTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCellDelegate.swift; path = Source/SwipeTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		4A4448A26419EE3871AAC7C2A84316E4 /* SwipeExpansionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpansionStyle.swift; path = Source/SwipeExpansionStyle.swift; sourceTree = "<group>"; };
+		4A6EA66A75360AECA73222D8403DB2E2 /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
+		51B64C6FC100A41218B565BFEB77ED2E /* SwipeTableOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableOptions.swift; path = Source/SwipeTableOptions.swift; sourceTree = "<group>"; };
+		54CD5DA1B04D41F93BF3560D881CF593 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		573DEC85442D49DF517968A9A15BDA64 /* Player.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Player.xcconfig; sourceTree = "<group>"; };
+		585A3072FA2F9E6E95FA69926881FD24 /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
+		58F1576FDF7EF79716A6E3736E8CDEA2 /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCell.swift; path = Source/SwipeTableViewCell.swift; sourceTree = "<group>"; };
+		5AB27AA3A60914E5CC6B4B1F2671192B /* SwipeTableViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Display.swift"; path = "Source/SwipeTableViewCell+Display.swift"; sourceTree = "<group>"; };
+		605F038E601344BB41E3C817FF5FB3B0 /* CardArticle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardArticle.swift; path = Cards/Sources/CardArticle.swift; sourceTree = "<group>"; };
+		63E678BDFF7E6F212D160A9968309835 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		645522650538D8B653891D060395BC01 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		65EBCFECF5474E77BE8CBEFCF5C5653D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		670198139911B15225ECEFA00899B4FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67744B6608121687DE8377E97120A686 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
-		679F5F8C06E940DFDEFFC226ED520F27 /* SwipeTableViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Accessibility.swift"; path = "Source/SwipeTableViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		69EE6A6EC3F30ABD6D9FCCB641D35532 /* Disk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Disk.framework; path = Disk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF45511BDAA1E1045B4515BAA792257 /* Pods-xpayr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-xpayr.modulemap"; sourceTree = "<group>"; };
-		6E3E49236B7F2E4C12343893CA7A4DFB /* Disk+InternalHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+InternalHelpers.swift"; path = "Sources/Disk+InternalHelpers.swift"; sourceTree = "<group>"; };
-		798CAAF6C7B3E8D9D08ADDF0E51F1176 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
-		7AB0D389D5CABBBB0389A2FE15F34DF5 /* SwipeTableViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Display.swift"; path = "Source/SwipeTableViewCell+Display.swift"; sourceTree = "<group>"; };
-		7BB700D7DFF6C014ED302564D6CCBB9B /* Disk+[Data].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[Data].swift"; path = "Sources/Disk+[Data].swift"; sourceTree = "<group>"; };
-		7D5EB8F122E45571CEF451F8F3E396AB /* Disk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Disk.xcconfig; sourceTree = "<group>"; };
-		7DB38550B2CA5D477F129372F46BB0DE /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIWindow+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
-		7EAAF6A1FB7DE0E1C9BAF41313A317F3 /* SwipeActionTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionTransitioning.swift; path = Source/SwipeActionTransitioning.swift; sourceTree = "<group>"; };
-		7EC51660B8DB77637F9C65FEB17B6279 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EF6919245E157AA22FCDDB2B6FA8B3C /* Cards.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cards.xcconfig; sourceTree = "<group>"; };
-		868D235B5F12C3CBEB9733978B5ADA6C /* Disk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Disk-dummy.m"; sourceTree = "<group>"; };
-		878CC84EF563ED05846ED538D955AA25 /* Disk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disk.swift; path = Sources/Disk.swift; sourceTree = "<group>"; };
-		8C01257C37977DBC144FAE7244A20A81 /* Disk+Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Errors.swift"; path = "Sources/Disk+Errors.swift"; sourceTree = "<group>"; };
-		8E8A34ED06B884C4AD9602BE3BE7695E /* SwipeActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionButton.swift; path = Source/SwipeActionButton.swift; sourceTree = "<group>"; };
-		8E90CA1CC470E2DEBAADF06AB238810E /* SwipeActionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionsView.swift; path = Source/SwipeActionsView.swift; sourceTree = "<group>"; };
-		8F8E1CFF24975B95EE720953B856AD4B /* SwipeTransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionLayout.swift; path = Source/SwipeTransitionLayout.swift; sourceTree = "<group>"; };
-		927187BE1B54F4BC0B9F0131A2DDE279 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		6E0574D069ECEB83D2153C1FE73293F4 /* Disk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Disk.modulemap; sourceTree = "<group>"; };
+		7284CDBAD87AD8317B888173AB38C59D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7761F3B3CEB6BE8B4EF810F4FB681FE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7926356E210C75A1CF19A1355792D9BC /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
+		7C29101E028EFA9F9B05AB6E9AB343F4 /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
+		81EF8D83BA5EA1E07E4B59E5403581B4 /* Cards-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cards-umbrella.h"; sourceTree = "<group>"; };
+		8A543346382C9070819A665E08B9991E /* Disk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-prefix.pch"; sourceTree = "<group>"; };
+		8DFFFACDCF9C9E5D32E223FDB04EA08A /* Cards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cards.framework; path = Cards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6A672435DD616F483E45F05B511F76 /* Disk+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Data.swift"; path = "Sources/Disk+Data.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		949538B4ADC2D3B42B3A3293720BAB55 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		93ADC5FC3B800D41CAE5EBE988397334 /* SwipeTransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionLayout.swift; path = Source/SwipeTransitionLayout.swift; sourceTree = "<group>"; };
+		9566603DA1C6E15D4B6205A6FE123C49 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		96CAD3C588C7089713037125988D5AF7 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		984554774649D41F3F38CE8F234FB8EC /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIWindow+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
 		9927955053672D1A6419A3968C427811 /* Pods-xpayr-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-xpayr-acknowledgements.markdown"; sourceTree = "<group>"; };
+		992BAE7AC54D4D230801E2844D939DA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB697651451961E6A9B8B1D438373E8 /* SwipeCellKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-prefix.pch"; sourceTree = "<group>"; };
+		9CF72F5B06B5627BF1EE2B0A68E4BB89 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
 		9CFD95486FFD5EEE2E194149FDEFB11C /* Pods-xpayr-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-xpayr-frameworks.sh"; sourceTree = "<group>"; };
-		9FF23648CEB820A67DE769C16CDCC5AB /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
-		A0BE5F691D89994D8C616C3E12889120 /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
-		A40CA74E32E3C60ACA4475B4DF79EC7A /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
-		A4AA1722FCF0301733E84B42E1643ABC /* SwipeAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimator.swift; path = Source/SwipeAnimator.swift; sourceTree = "<group>"; };
+		9D1E6D2C0FB6169F4D200F71EBAC5409 /* SwipeExpanding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpanding.swift; path = Source/SwipeExpanding.swift; sourceTree = "<group>"; };
+		9ECD3D43030B800FCDFE12D0E713CA6D /* SwipeAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimator.swift; path = Source/SwipeAnimator.swift; sourceTree = "<group>"; };
+		9EE5B185D1E358A4CA68D0A1C929F9BE /* SwipeCellKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeCellKit.modulemap; sourceTree = "<group>"; };
+		A1E129695D87B81D607FDA1A1FF5899D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26B0922B5CB80945D4A8071FF13203D /* SwipeTableViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Accessibility.swift"; path = "Source/SwipeTableViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		A3505109477F7D4968066A074A76171C /* Disk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disk.swift; path = Sources/Disk.swift; sourceTree = "<group>"; };
 		A57E5652A24E270E1E91E405A4FE817E /* Pods-xpayr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-xpayr.debug.xcconfig"; sourceTree = "<group>"; };
-		A725BE213C8E8A16F13D75583AC6AF14 /* Disk+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Data.swift"; path = "Sources/Disk+Data.swift"; sourceTree = "<group>"; };
-		A8315801A698D1EBF5247D30942D3067 /* CardGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardGroup.swift; path = Cards/CardGroup.swift; sourceTree = "<group>"; };
-		A9A8D4194A3F46888BE2CCF994F62205 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
-		ACCF72CD14BB670CC5DC9F0A4DCAB3E8 /* SwipeExpansionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpansionStyle.swift; path = Source/SwipeExpansionStyle.swift; sourceTree = "<group>"; };
+		A5E1369D2BB897A96773EDC62F7442D8 /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
+		A5F398675D8520409E25B82210FE243D /* Disk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-umbrella.h"; sourceTree = "<group>"; };
+		A61943FF523C66A114E5EBE2AEAA6FB3 /* CardGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardGroup.swift; path = Cards/Sources/CardGroup.swift; sourceTree = "<group>"; };
+		A656F0A26974ACA6806EB6807B52DBC7 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIWindow+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		AA91DBA6D415AA665AF174344DBDBA11 /* CardPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardPlayer.swift; path = Cards/Sources/CardPlayer.swift; sourceTree = "<group>"; };
 		AF7360A64921304266F960ADBE51C509 /* Pods-xpayr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-xpayr.release.xcconfig"; sourceTree = "<group>"; };
-		B06059CD47C9E414D3ED2B7D991182D9 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
-		B1E0F1A2D15247F65A433FD234BBFE98 /* Cards-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cards-umbrella.h"; sourceTree = "<group>"; };
-		B316FB365279713C68491FF71DC20182 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
-		B7922844F246CC9C841EF925C0B24013 /* SwipeCellKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeCellKit-dummy.m"; sourceTree = "<group>"; };
-		B8BBA34861D7C965CBAA3F92427329D3 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
-		BDEB8DE0FE50A5F3E5030D19EFFD3DDC /* IQKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
+		B3882AFF0DC90F932DBF065BA129DA04 /* SwipeCellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeCellKit.framework; path = SwipeCellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD9984F5CD80286F99EE76965726234 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		BFD344FDDE209D2CAD440B057C2E9365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C1E1FE4F6B397D66892E87584C0C9A82 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManager/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		C267D8628397130C6C866071530DC651 /* Pods-xpayr-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-xpayr-acknowledgements.plist"; sourceTree = "<group>"; };
-		C304B0158F5B867A8ABB90C0620DC205 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
-		C6B123ED01FA98FD61765CC385331BCC /* SwipeCellKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeCellKit.xcconfig; sourceTree = "<group>"; };
-		CA42149182C72B9E93CA13ECA5864755 /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
-		CA751DFA70E5148DD28DF2868374AC94 /* SwipeTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCellDelegate.swift; path = Source/SwipeTableViewCellDelegate.swift; sourceTree = "<group>"; };
-		CA7C997F4183A79270D65C724F710082 /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
-		CAB5972D35728BD598FDFBD69F2931D9 /* SwipeAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAction.swift; path = Source/SwipeAction.swift; sourceTree = "<group>"; };
-		CB2476345141E6F76B7CB6C7DE085D3B /* Disk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Disk.framework; path = Disk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF035319BE000202B415C9D0C025EBBF /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
-		CFA1C09117A5192E770715F85D457650 /* SwipeCellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeCellKit.framework; path = SwipeCellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D09264FEC8C9B7524B94E2233199E682 /* CardArticle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardArticle.swift; path = Cards/CardArticle.swift; sourceTree = "<group>"; };
-		D3374C66D3B8B7FE714A0D63B05FAB7B /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManager/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		D50897FBA6373EFC13BB792C2F50816C /* SwipeCellKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeCellKit.modulemap; sourceTree = "<group>"; };
-		DD070CDA108E7F760B1B105CBD72DA71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E137440054328FE984AEF47C5B71A560 /* Disk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Disk.modulemap; sourceTree = "<group>"; };
-		E1CEC4A775B028E5D7317C7C71E3CDD9 /* SwipeFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeFeedback.swift; path = Source/SwipeFeedback.swift; sourceTree = "<group>"; };
-		E50C6F6A65FF0FE8F47A54C305728293 /* Disk+VolumeInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+VolumeInformation.swift"; path = "Sources/Disk+VolumeInformation.swift"; sourceTree = "<group>"; };
-		E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E6E68D32207435ACDA7BD4B9D92199AA /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
-		E8D307704FA1CFCAB9E1C8770C70CF85 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
-		EAF6E47428100A6C4F044A6EDABDB0EE /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
-		ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EE3CDD1E0D7B8E67B881E89BCCC74103 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
-		F18934F082CB8BD1826C0C589C957492 /* Disk+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+UIImage.swift"; path = "Sources/Disk+UIImage.swift"; sourceTree = "<group>"; };
-		F44532653A3A55C9F300CDE36D82D370 /* Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Cards/Card.swift; sourceTree = "<group>"; };
+		C47E9D8528E16E940CC58644788A5134 /* Player.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Sources/Player.swift; sourceTree = "<group>"; };
+		C8F2C0D6761F62BFD3DEBA83AE241AA6 /* Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Cards/Sources/Card.swift; sourceTree = "<group>"; };
+		CD078BA373D1A84DBD1522BA5EADAD6E /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		CEF5690D3FC0BC243AF29F65DC8FB0FE /* SwipeCellKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeCellKit-dummy.m"; sourceTree = "<group>"; };
+		D1C143FFAB9EA0CBA434647F87221202 /* Player-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Player-umbrella.h"; sourceTree = "<group>"; };
+		D549CA2F38F0851DB675645A041D48DF /* SwipeFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeFeedback.swift; path = Source/SwipeFeedback.swift; sourceTree = "<group>"; };
+		D5D1BC55D2F1E45177A71EBCDDA41AA6 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		D8B525AC8C48748A9B4F0E3EDC45ECE1 /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
+		DE30BA51FB3CC536BE9C492FF0DB17F9 /* Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Player.framework; path = Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEDEF02D05DA1B2D986E66598FEFAE17 /* SwipeAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAction.swift; path = Source/SwipeAction.swift; sourceTree = "<group>"; };
+		E39147990DBD4502CF5441639583ED84 /* Disk+[UIImage].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[UIImage].swift"; path = "Sources/Disk+[UIImage].swift"; sourceTree = "<group>"; };
+		EA52569BCE81BD08BFEF355EBE4AD255 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		EC589600650F47220C8BE71DAB1363DD /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		ED69819A1ED0C22DCB66A987EA9AC7EB /* SwipeActionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionsView.swift; path = Source/SwipeActionsView.swift; sourceTree = "<group>"; };
+		EE1986B4FD048B6E8F4F5A1FDBFE6BD5 /* CardHighlight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardHighlight.swift; path = Cards/Sources/CardHighlight.swift; sourceTree = "<group>"; };
+		F0ECF8EFED68ECD46252331074AF7B12 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		F0EDCD5B9405C64741422E81476B74D1 /* SwipeCellKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeCellKit.xcconfig; sourceTree = "<group>"; };
+		F3ADA603A67209FCA20AB5EB35044E72 /* CardGroupSliding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardGroupSliding.swift; path = Cards/Sources/CardGroupSliding.swift; sourceTree = "<group>"; };
+		F3D6ED3903D1A8D2C76C78E85EA896D3 /* Pods_xpayr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_xpayr.framework; path = "Pods-xpayr.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46BB2AF701480E392756B158363F279 /* Pods-xpayr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-xpayr-dummy.m"; sourceTree = "<group>"; };
-		F49D7B380EAB906895E886270EB61953 /* Pods_xpayr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_xpayr.framework; path = "Pods-xpayr.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7F63567C0A762828BBF8F2F4B3A427F /* Disk+[UIImage].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[UIImage].swift"; path = "Sources/Disk+[UIImage].swift"; sourceTree = "<group>"; };
-		FC031F252F33A9BA3EF1908635EB0B08 /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
-		FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5AA64E4EBFF017B530F3D6159F95D7B /* Disk+Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Errors.swift"; path = "Sources/Disk+Errors.swift"; sourceTree = "<group>"; };
+		F66900E06063A516A636FB1E2779AA78 /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
+		F78EA505A1DAE11020F0D7FFE8C908DE /* Cards.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cards.modulemap; sourceTree = "<group>"; };
+		F84468D0C34E16F581167C1DEBEA0352 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManager.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC624841E7AAB9DB19D83DB0C3D97CD /* Player-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Player-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,11 +273,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		668582DF143B94A669B61C61855E3563 /* Frameworks */ = {
+		14A63B776736243539398720E223B596 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95A2EEB9C10342692B1D37AF7DC7444C /* Foundation.framework in Frameworks */,
+				A65998A12AE524B88C6E2B9B028EE944 /* Foundation.framework in Frameworks */,
+				76532D26E025EB0304F69B96AA700A96 /* Player.framework in Frameworks */,
+				4F4E5151CA3EB41CCDD12AFB89B9CB54 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2835143667F679853967BCE042FEA4A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C04410E4C796786415FD29560A6946 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F3D017BFBAFFAA77206B814D4AD57A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C004C64F2F12AF7914A98BB30102B2D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,82 +310,119 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B33D5B3A28E5A39CA4CC58D9B20ACEB4 /* Frameworks */ = {
+		DAC892F5891A8A13E03885B46E270EAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA90965E750E4AC7B90CA1ADFC657826 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E983DF4C39BF3C50D30683F79466E49E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F45E0C395703F6193E11C1B5569C7E7 /* Foundation.framework in Frameworks */,
+				1D697D3FF7C9E7BC3AAC730C7065479F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A82B2429D0A398CD574178D0393DDFA /* SwipeCellKit */ = {
+		064B8E6BD5F6CF5AEB8F6A12059C7C6A /* IQKeyboardManager */ = {
 			isa = PBXGroup;
 			children = (
-				B316FB365279713C68491FF71DC20182 /* Extensions.swift */,
-				262FA1557AA8D47AEB47424FDC7EF3C9 /* Swipeable.swift */,
-				CAB5972D35728BD598FDFBD69F2931D9 /* SwipeAction.swift */,
-				8E8A34ED06B884C4AD9602BE3BE7695E /* SwipeActionButton.swift */,
-				8E90CA1CC470E2DEBAADF06AB238810E /* SwipeActionsView.swift */,
-				7EAAF6A1FB7DE0E1C9BAF41313A317F3 /* SwipeActionTransitioning.swift */,
-				A4AA1722FCF0301733E84B42E1643ABC /* SwipeAnimator.swift */,
-				0268BE880ED4052A7062C2578AA5E43A /* SwipeExpanding.swift */,
-				ACCF72CD14BB670CC5DC9F0A4DCAB3E8 /* SwipeExpansionStyle.swift */,
-				E1CEC4A775B028E5D7317C7C71E3CDD9 /* SwipeFeedback.swift */,
-				177B2EEB9303CCD6C3797B0BE1F95691 /* SwipeTableOptions.swift */,
-				470BDA3783B7CEBA9E674B3E4F230F50 /* SwipeTableViewCell.swift */,
-				679F5F8C06E940DFDEFFC226ED520F27 /* SwipeTableViewCell+Accessibility.swift */,
-				7AB0D389D5CABBBB0389A2FE15F34DF5 /* SwipeTableViewCell+Display.swift */,
-				CA751DFA70E5148DD28DF2868374AC94 /* SwipeTableViewCellDelegate.swift */,
-				8F8E1CFF24975B95EE720953B856AD4B /* SwipeTransitionLayout.swift */,
-				72E9C46BD43A2816088EEB56EA6AE2F8 /* Support Files */,
+				30C900D14D235F18157422F5B81DBE92 /* IQBarButtonItem.h */,
+				7C29101E028EFA9F9B05AB6E9AB343F4 /* IQBarButtonItem.m */,
+				D8B525AC8C48748A9B4F0E3EDC45ECE1 /* IQKeyboardManager.h */,
+				A5E1369D2BB897A96773EDC62F7442D8 /* IQKeyboardManager.m */,
+				EC589600650F47220C8BE71DAB1363DD /* IQKeyboardManagerConstants.h */,
+				9CF72F5B06B5627BF1EE2B0A68E4BB89 /* IQKeyboardManagerConstantsInternal.h */,
+				2E913CC2FEEF4A25BA47AC03C8310C4D /* IQKeyboardReturnKeyHandler.h */,
+				96CAD3C588C7089713037125988D5AF7 /* IQKeyboardReturnKeyHandler.m */,
+				EA52569BCE81BD08BFEF355EBE4AD255 /* IQNSArray+Sort.h */,
+				645522650538D8B653891D060395BC01 /* IQNSArray+Sort.m */,
+				2C085FAF27868F221FDD1BC644CE68F2 /* IQPreviousNextView.h */,
+				585A3072FA2F9E6E95FA69926881FD24 /* IQPreviousNextView.m */,
+				15565D1DD4B6B454B519A0DCA5A9DB7D /* IQTextView.h */,
+				7926356E210C75A1CF19A1355792D9BC /* IQTextView.m */,
+				BDD9984F5CD80286F99EE76965726234 /* IQTitleBarButtonItem.h */,
+				381BFA60FD874F613B9F7EA8E0A17248 /* IQTitleBarButtonItem.m */,
+				0C127DE2EB24CE99F204A0325F356F1E /* IQToolbar.h */,
+				1D74EB31BBBC6B5CF6203BB319169947 /* IQToolbar.m */,
+				CD078BA373D1A84DBD1522BA5EADAD6E /* IQUIScrollView+Additions.h */,
+				438CB44A545F71695A87EC19E8D889DD /* IQUIScrollView+Additions.m */,
+				9566603DA1C6E15D4B6205A6FE123C49 /* IQUITextFieldView+Additions.h */,
+				186612564E39389E9C5E755134661714 /* IQUITextFieldView+Additions.m */,
+				443416732F601073197981E9A91A55BB /* IQUIView+Hierarchy.h */,
+				D5D1BC55D2F1E45177A71EBCDDA41AA6 /* IQUIView+Hierarchy.m */,
+				3A2017C5143897ED534D616B8AFE8576 /* IQUIView+IQKeyboardToolbar.h */,
+				185AC1E386027CD08C16CEC41838320D /* IQUIView+IQKeyboardToolbar.m */,
+				F0ECF8EFED68ECD46252331074AF7B12 /* IQUIViewController+Additions.h */,
+				54CD5DA1B04D41F93BF3560D881CF593 /* IQUIViewController+Additions.m */,
+				A656F0A26974ACA6806EB6807B52DBC7 /* IQUIWindow+Hierarchy.h */,
+				984554774649D41F3F38CE8F234FB8EC /* IQUIWindow+Hierarchy.m */,
+				6EB9318F8CB0503BABE827DADE1F20F1 /* Resources */,
+				169C0D1C936E54F48784D1DD238D3A7B /* Support Files */,
 			);
-			name = SwipeCellKit;
-			path = SwipeCellKit;
+			name = IQKeyboardManager;
+			path = IQKeyboardManager;
 			sourceTree = "<group>";
 		};
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+		169C0D1C936E54F48784D1DD238D3A7B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1C92A2483B053D568265270786344333 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DD070CDA108E7F760B1B105CBD72DA71 /* Info.plist */,
-				600D6172784C2172908113039EF06D4A /* IQKeyboardManager.modulemap */,
-				3D730ED0D022EBD2C7538275EFC2BA1F /* IQKeyboardManager.xcconfig */,
-				4F8890FE2D4779D745B73AF622829496 /* IQKeyboardManager-dummy.m */,
-				2F6995AEFB834120DC5292D528558B0B /* IQKeyboardManager-prefix.pch */,
-				BDEB8DE0FE50A5F3E5030D19EFFD3DDC /* IQKeyboardManager-umbrella.h */,
+				2EF8F28E5E2FE97237EF786CBFEF93FA /* Info.plist */,
+				4A6EA66A75360AECA73222D8403DB2E2 /* IQKeyboardManager.modulemap */,
+				1E3AF17B01D7445BED640BAA7B5E9B64 /* IQKeyboardManager.xcconfig */,
+				2B06AEEF015EB948BCEBCF3046432705 /* IQKeyboardManager-dummy.m */,
+				F66900E06063A516A636FB1E2779AA78 /* IQKeyboardManager-prefix.pch */,
+				0E34597A7BDB59EB66C0EFB4C025E7B0 /* IQKeyboardManager-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/IQKeyboardManager";
 			sourceTree = "<group>";
 		};
-		292093E902A3D528F011DA56D9B1D817 /* Products */ = {
+		1D419D13D753DBEDEF5A7C205A34DD8C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				391C95809D43EDC2954DBA49DC09852E /* Cards.framework */,
-				CB2476345141E6F76B7CB6C7DE085D3B /* Disk.framework */,
-				323BD45E71C8328BD43FBF51DEFDA935 /* IQKeyboardManager.framework */,
-				F49D7B380EAB906895E886270EB61953 /* Pods_xpayr.framework */,
-				CFA1C09117A5192E770715F85D457650 /* SwipeCellKit.framework */,
+				F78EA505A1DAE11020F0D7FFE8C908DE /* Cards.modulemap */,
+				337A0021EEAC7C7EDF146CA75DE06D71 /* Cards.xcconfig */,
+				3EA61A8842A6E02BF914847BD06EF0F0 /* Cards-dummy.m */,
+				0DC508B7B2B6C361733B7ECD1F67CD11 /* Cards-prefix.pch */,
+				81EF8D83BA5EA1E07E4B59E5403581B4 /* Cards-umbrella.h */,
+				A1E129695D87B81D607FDA1A1FF5899D /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Cards";
+			sourceTree = "<group>";
+		};
+		2CEF36681FB819CDC9CBCC4077B7D23B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7284CDBAD87AD8317B888173AB38C59D /* CoreGraphics.framework */,
+				65EBCFECF5474E77BE8CBEFCF5C5653D /* Foundation.framework */,
+				7761F3B3CEB6BE8B4EF810F4FB681FE2 /* QuartzCore.framework */,
+				BFD344FDDE209D2CAD440B057C2E9365 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		353C17453985D0568AD092FD1F2A1313 /* SwipeCellKit */ = {
+			isa = PBXGroup;
+			children = (
+				1C4AEF4CA425F1BD20DCF09644236815 /* Extensions.swift */,
+				4849D0ABA95B737F3F38CED33A834067 /* Swipeable.swift */,
+				DEDEF02D05DA1B2D986E66598FEFAE17 /* SwipeAction.swift */,
+				01FDA96076FE4111B72415633F529F44 /* SwipeActionButton.swift */,
+				ED69819A1ED0C22DCB66A987EA9AC7EB /* SwipeActionsView.swift */,
+				26BE118AF378F39F06DA54825347217D /* SwipeActionTransitioning.swift */,
+				9ECD3D43030B800FCDFE12D0E713CA6D /* SwipeAnimator.swift */,
+				9D1E6D2C0FB6169F4D200F71EBAC5409 /* SwipeExpanding.swift */,
+				4A4448A26419EE3871AAC7C2A84316E4 /* SwipeExpansionStyle.swift */,
+				D549CA2F38F0851DB675645A041D48DF /* SwipeFeedback.swift */,
+				51B64C6FC100A41218B565BFEB77ED2E /* SwipeTableOptions.swift */,
+				58F1576FDF7EF79716A6E3736E8CDEA2 /* SwipeTableViewCell.swift */,
+				A26B0922B5CB80945D4A8071FF13203D /* SwipeTableViewCell+Accessibility.swift */,
+				5AB27AA3A60914E5CC6B4B1F2671192B /* SwipeTableViewCell+Display.swift */,
+				490B40504E261718A749FD07F33BCE74 /* SwipeTableViewCellDelegate.swift */,
+				93ADC5FC3B800D41CAE5EBE988397334 /* SwipeTransitionLayout.swift */,
+				E4AA8A7C753058123B697FCC08FDBCA4 /* Support Files */,
+			);
+			name = SwipeCellKit;
+			path = SwipeCellKit;
 			sourceTree = "<group>";
 		};
 		3E7E1B8040E592F214EBBF83927FF3D8 /* Pods-xpayr */ = {
@@ -359,149 +443,145 @@
 			path = "Target Support Files/Pods-xpayr";
 			sourceTree = "<group>";
 		};
-		4A2A928558CA6416FCEFC70ADE2C740A /* Cards */ = {
+		44D83D285FA3BF787AE84412E0F43930 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F44532653A3A55C9F300CDE36D82D370 /* Card.swift */,
-				D09264FEC8C9B7524B94E2233199E682 /* CardArticle.swift */,
-				A8315801A698D1EBF5247D30942D3067 /* CardGroup.swift */,
-				55875445FE10C32FF95C3F9EE89FF174 /* CardGroupSliding.swift */,
-				3382A2397783E9BDE29D396598CE760F /* CardHighlight.swift */,
-				57C6D56FAF91E8E0D897D6002FD040B5 /* CardPlayer.swift */,
-				008A423AD6986B8F67B41187CCF7DF15 /* Player_by_Patric_Piemonte.swift */,
-				FD53818ACC30A8C968FA70742804569E /* Support Files */,
+				8DFFFACDCF9C9E5D32E223FDB04EA08A /* Cards.framework */,
+				69EE6A6EC3F30ABD6D9FCCB641D35532 /* Disk.framework */,
+				F84468D0C34E16F581167C1DEBEA0352 /* IQKeyboardManager.framework */,
+				DE30BA51FB3CC536BE9C492FF0DB17F9 /* Player.framework */,
+				F3D6ED3903D1A8D2C76C78E85EA896D3 /* Pods_xpayr.framework */,
+				B3882AFF0DC90F932DBF065BA129DA04 /* SwipeCellKit.framework */,
 			);
-			name = Cards;
-			path = Cards;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		72E9C46BD43A2816088EEB56EA6AE2F8 /* Support Files */ = {
+		470A28E7FA90C57232C1F62CE4FCB6A1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7EC51660B8DB77637F9C65FEB17B6279 /* Info.plist */,
-				D50897FBA6373EFC13BB792C2F50816C /* SwipeCellKit.modulemap */,
-				C6B123ED01FA98FD61765CC385331BCC /* SwipeCellKit.xcconfig */,
-				B7922844F246CC9C841EF925C0B24013 /* SwipeCellKit-dummy.m */,
-				19F65CA29B130563114B66C21B396E10 /* SwipeCellKit-prefix.pch */,
-				62D04C7A6A6869791B7880FD93DD4D0D /* SwipeCellKit-umbrella.h */,
+				992BAE7AC54D4D230801E2844D939DA4 /* Info.plist */,
+				128D354493BFD5F318DFF7308B664830 /* Player.modulemap */,
+				573DEC85442D49DF517968A9A15BDA64 /* Player.xcconfig */,
+				FEC624841E7AAB9DB19D83DB0C3D97CD /* Player-dummy.m */,
+				3EBA1F30CF3B032FE0A8F681D02023E4 /* Player-prefix.pch */,
+				D1C143FFAB9EA0CBA434647F87221202 /* Player-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwipeCellKit";
+			path = "../Target Support Files/Player";
+			sourceTree = "<group>";
+		};
+		626CC56924FB4BFE02A60AB561B49CAD /* Disk */ = {
+			isa = PBXGroup;
+			children = (
+				412E7B37A636703168699827E9CF5010 /* Disk.h */,
+				A3505109477F7D4968066A074A76171C /* Disk.swift */,
+				100A88013EC6E1AF8CDCBC5C113D3FC9 /* Disk+[Data].swift */,
+				E39147990DBD4502CF5441639583ED84 /* Disk+[UIImage].swift */,
+				2E43AB3A460A4E5F963B91B2F13BBD51 /* Disk+Codable.swift */,
+				8E6A672435DD616F483E45F05B511F76 /* Disk+Data.swift */,
+				F5AA64E4EBFF017B530F3D6159F95D7B /* Disk+Errors.swift */,
+				2311B2508CD403310CB99E7463751E35 /* Disk+Helpers.swift */,
+				2DBF022F7EC7EC12A51006D5DD40B983 /* Disk+InternalHelpers.swift */,
+				089B63C1661A47A5E59272BF9EB56D86 /* Disk+UIImage.swift */,
+				0ED1675CD0EB92E88BB02E2AF64A4B48 /* Disk+VolumeInformation.swift */,
+				9502A8D129CE0825B2ABE5AB6F3D1F2F /* Support Files */,
+			);
+			name = Disk;
+			path = Disk;
+			sourceTree = "<group>";
+		};
+		6EB9318F8CB0503BABE827DADE1F20F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1E1FE4F6B397D66892E87584C0C9A82 /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				E10150D1EA484C9AB0417B9DBBBB5F14 /* Pods */,
-				292093E902A3D528F011DA56D9B1D817 /* Products */,
+				D631A1EF085C7E720D07F455B9240D13 /* Frameworks */,
+				8DE5A440BD7A585C921FACB007B24201 /* Pods */,
+				44D83D285FA3BF787AE84412E0F43930 /* Products */,
 				F4CCAF6FCCA7F1224183BB914BF1BAA0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8408698BA617496A47009EF85295FD69 /* Resources */ = {
+		8DE5A440BD7A585C921FACB007B24201 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D3374C66D3B8B7FE714A0D63B05FAB7B /* IQKeyboardManager.bundle */,
+				CE393C8140027A72B1955767238A8CE5 /* Cards */,
+				626CC56924FB4BFE02A60AB561B49CAD /* Disk */,
+				064B8E6BD5F6CF5AEB8F6A12059C7C6A /* IQKeyboardManager */,
+				927667877265F7814319EFDCFFFD0527 /* Player */,
+				353C17453985D0568AD092FD1F2A1313 /* SwipeCellKit */,
 			);
-			name = Resources;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */ = {
+		927667877265F7814319EFDCFFFD0527 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */,
-				ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */,
-				E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */,
-				FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */,
+				C47E9D8528E16E940CC58644788A5134 /* Player.swift */,
+				470A28E7FA90C57232C1F62CE4FCB6A1 /* Support Files */,
 			);
-			name = iOS;
+			name = Player;
+			path = Player;
 			sourceTree = "<group>";
 		};
-		A2DEFEE7D82D32169BC3663C321F493E /* Support Files */ = {
+		9502A8D129CE0825B2ABE5AB6F3D1F2F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E137440054328FE984AEF47C5B71A560 /* Disk.modulemap */,
-				7D5EB8F122E45571CEF451F8F3E396AB /* Disk.xcconfig */,
-				868D235B5F12C3CBEB9733978B5ADA6C /* Disk-dummy.m */,
-				542E250B94A30C61A245CBC80A4BF032 /* Disk-prefix.pch */,
-				2F87113FEA200EB8ECF5BFD94EC6E77C /* Disk-umbrella.h */,
-				28836A8405766E104629F215BDDB40D8 /* Info.plist */,
+				6E0574D069ECEB83D2153C1FE73293F4 /* Disk.modulemap */,
+				15DA388EA737612E26EC6F7919115D9B /* Disk.xcconfig */,
+				45A6F8F483AE79513238A9E890A0B347 /* Disk-dummy.m */,
+				8A543346382C9070819A665E08B9991E /* Disk-prefix.pch */,
+				A5F398675D8520409E25B82210FE243D /* Disk-umbrella.h */,
+				4659FC3F0906B3663B8D2DC64B566D01 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Disk";
 			sourceTree = "<group>";
 		};
-		C896ED35AA747978FB180559E304331D /* Disk */ = {
+		CE393C8140027A72B1955767238A8CE5 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				50EB3B34E1BCBE079E0B5A05CA5D003E /* Disk.h */,
-				878CC84EF563ED05846ED538D955AA25 /* Disk.swift */,
-				7BB700D7DFF6C014ED302564D6CCBB9B /* Disk+[Data].swift */,
-				F7F63567C0A762828BBF8F2F4B3A427F /* Disk+[UIImage].swift */,
-				1DBF9D0CEE4786B2B27670954C97D62E /* Disk+Codable.swift */,
-				A725BE213C8E8A16F13D75583AC6AF14 /* Disk+Data.swift */,
-				8C01257C37977DBC144FAE7244A20A81 /* Disk+Errors.swift */,
-				4FDD1EF675D15A3390198DA665417762 /* Disk+Helpers.swift */,
-				6E3E49236B7F2E4C12343893CA7A4DFB /* Disk+InternalHelpers.swift */,
-				F18934F082CB8BD1826C0C589C957492 /* Disk+UIImage.swift */,
-				E50C6F6A65FF0FE8F47A54C305728293 /* Disk+VolumeInformation.swift */,
-				A2DEFEE7D82D32169BC3663C321F493E /* Support Files */,
+				C8F2C0D6761F62BFD3DEBA83AE241AA6 /* Card.swift */,
+				605F038E601344BB41E3C817FF5FB3B0 /* CardArticle.swift */,
+				A61943FF523C66A114E5EBE2AEAA6FB3 /* CardGroup.swift */,
+				F3ADA603A67209FCA20AB5EB35044E72 /* CardGroupSliding.swift */,
+				EE1986B4FD048B6E8F4F5A1FDBFE6BD5 /* CardHighlight.swift */,
+				AA91DBA6D415AA665AF174344DBDBA11 /* CardPlayer.swift */,
+				3E4B0BA7C1C43679878E8B932D9B0315 /* LayoutHelper.swift */,
+				1D419D13D753DBEDEF5A7C205A34DD8C /* Support Files */,
 			);
-			name = Disk;
-			path = Disk;
+			name = Cards;
+			path = Cards;
 			sourceTree = "<group>";
 		};
-		CEF945C482D579CE71FFF3AE63D1E751 /* IQKeyboardManager */ = {
+		D631A1EF085C7E720D07F455B9240D13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA42149182C72B9E93CA13ECA5864755 /* IQBarButtonItem.h */,
-				A40CA74E32E3C60ACA4475B4DF79EC7A /* IQBarButtonItem.m */,
-				FC031F252F33A9BA3EF1908635EB0B08 /* IQKeyboardManager.h */,
-				CF035319BE000202B415C9D0C025EBBF /* IQKeyboardManager.m */,
-				EE3CDD1E0D7B8E67B881E89BCCC74103 /* IQKeyboardManagerConstants.h */,
-				4C64CDDE955E1C8ACD938955256EB771 /* IQKeyboardManagerConstantsInternal.h */,
-				E6E68D32207435ACDA7BD4B9D92199AA /* IQKeyboardReturnKeyHandler.h */,
-				A9A8D4194A3F46888BE2CCF994F62205 /* IQKeyboardReturnKeyHandler.m */,
-				E8D307704FA1CFCAB9E1C8770C70CF85 /* IQNSArray+Sort.h */,
-				927187BE1B54F4BC0B9F0131A2DDE279 /* IQNSArray+Sort.m */,
-				0B6D6FE0F51AFCC9B8516F5B85A838E0 /* IQPreviousNextView.h */,
-				5316359DD7EFBB5ABAB41CFB42C43160 /* IQPreviousNextView.m */,
-				A0BE5F691D89994D8C616C3E12889120 /* IQTextView.h */,
-				152899FB2FA981C05CD4E2B980285549 /* IQTextView.m */,
-				32F3A48BDD81C982E245D81978B7053D /* IQTitleBarButtonItem.h */,
-				4E4807AAA05FDAC412AFB0C29B428989 /* IQTitleBarButtonItem.m */,
-				CA7C997F4183A79270D65C724F710082 /* IQToolbar.h */,
-				2F11EEB774ABC6FF771551D18544DD66 /* IQToolbar.m */,
-				C304B0158F5B867A8ABB90C0620DC205 /* IQUIScrollView+Additions.h */,
-				475377275C0846EC718D1842F5F60493 /* IQUIScrollView+Additions.m */,
-				4E11E3CB7B696D5FD2795E9F82182471 /* IQUITextFieldView+Additions.h */,
-				798CAAF6C7B3E8D9D08ADDF0E51F1176 /* IQUITextFieldView+Additions.m */,
-				B8BBA34861D7C965CBAA3F92427329D3 /* IQUIView+Hierarchy.h */,
-				67744B6608121687DE8377E97120A686 /* IQUIView+Hierarchy.m */,
-				B06059CD47C9E414D3ED2B7D991182D9 /* IQUIView+IQKeyboardToolbar.h */,
-				EAF6E47428100A6C4F044A6EDABDB0EE /* IQUIView+IQKeyboardToolbar.m */,
-				949538B4ADC2D3B42B3A3293720BAB55 /* IQUIViewController+Additions.h */,
-				9FF23648CEB820A67DE769C16CDCC5AB /* IQUIViewController+Additions.m */,
-				39BC97E80023D6616E9F8C0745C23C85 /* IQUIWindow+Hierarchy.h */,
-				7DB38550B2CA5D477F129372F46BB0DE /* IQUIWindow+Hierarchy.m */,
-				8408698BA617496A47009EF85295FD69 /* Resources */,
-				1C92A2483B053D568265270786344333 /* Support Files */,
+				09EB404CB7853FCDF463AB5E3A22BF19 /* Player.framework */,
+				2CEF36681FB819CDC9CBCC4077B7D23B /* iOS */,
 			);
-			name = IQKeyboardManager;
-			path = IQKeyboardManager;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E10150D1EA484C9AB0417B9DBBBB5F14 /* Pods */ = {
+		E4AA8A7C753058123B697FCC08FDBCA4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4A2A928558CA6416FCEFC70ADE2C740A /* Cards */,
-				C896ED35AA747978FB180559E304331D /* Disk */,
-				CEF945C482D579CE71FFF3AE63D1E751 /* IQKeyboardManager */,
-				0A82B2429D0A398CD574178D0393DDFA /* SwipeCellKit */,
+				63E678BDFF7E6F212D160A9968309835 /* Info.plist */,
+				9EE5B185D1E358A4CA68D0A1C929F9BE /* SwipeCellKit.modulemap */,
+				F0EDCD5B9405C64741422E81476B74D1 /* SwipeCellKit.xcconfig */,
+				CEF5690D3FC0BC243AF29F65DC8FB0FE /* SwipeCellKit-dummy.m */,
+				9CB697651451961E6A9B8B1D438373E8 /* SwipeCellKit-prefix.pch */,
+				4192004F9046406242C148635D615A65 /* SwipeCellKit-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SwipeCellKit";
 			sourceTree = "<group>";
 		};
 		F4CCAF6FCCA7F1224183BB914BF1BAA0 /* Targets Support Files */ = {
@@ -512,36 +592,30 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FD53818ACC30A8C968FA70742804569E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1EE167BD1B8D576A398CEF9013D9646E /* Cards.modulemap */,
-				7EF6919245E157AA22FCDDB2B6FA8B3C /* Cards.xcconfig */,
-				41AF9AF92596730CAF11DC61A88F1666 /* Cards-dummy.m */,
-				3E098124E3CC8F90869D3490DD8B5CF0 /* Cards-prefix.pch */,
-				B1E0F1A2D15247F65A433FD234BBFE98 /* Cards-umbrella.h */,
-				01266EA61C2EB12FAA558FEAA2B52FCA /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Cards";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		50FF18A6326B9D12B0F03599AFF4742B /* Headers */ = {
+		603A82C5EB80D41C31274431D5CD0E71 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F8D2F50011085DAA8C21A3B26A72ABD /* SwipeCellKit-umbrella.h in Headers */,
+				4C9CC422A0D7C2CE3BD29EFCB165F899 /* Cards-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86A5C87BF40DAFE09493E4D912184FBF /* Headers */ = {
+		6826B23452A76CE39587B66AC51479D4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50CBA916F82A5B7DE637EACAAF131EB6 /* Pods-xpayr-umbrella.h in Headers */,
+				363DC09E72BEED46F800A9250AB486DD /* SwipeCellKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820A94540685DD7F2F1DE2BA896008F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEB6189C870995F504B925E02DC4378 /* Pods-xpayr-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,11 +628,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7AF947CEC15B67B18EE73BCEF2AC222 /* Headers */ = {
+		EB1D8B82EC0EAA3BDBCA3F6B3E16E3C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD33AB6E11B2B727B013EB8376BDB30D /* Cards-umbrella.h in Headers */,
+				ECF60C4F80ACF2A6CE8D233B895EEF6A /* Player-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,23 +663,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0497D11A44EF9DA6E2E0F60BE9D158A7 /* SwipeCellKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44893FC77590F1E8824ED21D5934983C /* Build configuration list for PBXNativeTarget "SwipeCellKit" */;
-			buildPhases = (
-				B08FA6AA0DE7549498393437D42C580E /* Sources */,
-				668582DF143B94A669B61C61855E3563 /* Frameworks */,
-				50FF18A6326B9D12B0F03599AFF4742B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwipeCellKit;
-			productName = SwipeCellKit;
-			productReference = CFA1C09117A5192E770715F85D457650 /* SwipeCellKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		1691E754022217B52671D98A23731A08 /* Disk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBD9A2E3065E5BD8E663E08B81AE10F3 /* Build configuration list for PBXNativeTarget "Disk" */;
@@ -620,7 +677,25 @@
 			);
 			name = Disk;
 			productName = Disk;
-			productReference = CB2476345141E6F76B7CB6C7DE085D3B /* Disk.framework */;
+			productReference = 69EE6A6EC3F30ABD6D9FCCB641D35532 /* Disk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1B91CA4773AECD154171A27CEE93017A /* Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32790BB1A54C146C6E7FB02139D2FD41 /* Build configuration list for PBXNativeTarget "Cards" */;
+			buildPhases = (
+				DFD1E5D09AB15EB7CE53F0BCDE2B458D /* Sources */,
+				14A63B776736243539398720E223B596 /* Frameworks */,
+				603A82C5EB80D41C31274431D5CD0E71 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				251F7BE324EDEC6C96384A82888B76B8 /* PBXTargetDependency */,
+			);
+			name = Cards;
+			productName = Cards;
+			productReference = 8DFFFACDCF9C9E5D32E223FDB04EA08A /* Cards.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		279AA6726F52A334C45E85774BD21A3D /* IQKeyboardManager */ = {
@@ -638,45 +713,63 @@
 			);
 			name = IQKeyboardManager;
 			productName = IQKeyboardManager;
-			productReference = 323BD45E71C8328BD43FBF51DEFDA935 /* IQKeyboardManager.framework */;
+			productReference = F84468D0C34E16F581167C1DEBEA0352 /* IQKeyboardManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		69612F7E90B022B75938B573949523AE /* Pods-xpayr */ = {
+		5E62BB0EDCFE1F73AA4DC7B00FE11B94 /* Pods-xpayr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FEDCE55445C8EE27B01D4CCFC64B9B68 /* Build configuration list for PBXNativeTarget "Pods-xpayr" */;
+			buildConfigurationList = 04A8CF0CE19433E59EED28D4E3205FD7 /* Build configuration list for PBXNativeTarget "Pods-xpayr" */;
 			buildPhases = (
-				44791EA2D83B25F31B5B892CE8F311A9 /* Sources */,
-				B33D5B3A28E5A39CA4CC58D9B20ACEB4 /* Frameworks */,
-				86A5C87BF40DAFE09493E4D912184FBF /* Headers */,
+				C05176ECEF345050E8ABB99B39A5D7B9 /* Sources */,
+				63F3D017BFBAFFAA77206B814D4AD57A /* Frameworks */,
+				820A94540685DD7F2F1DE2BA896008F3 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C9D1DB2703166E1663AAE3B14CA08560 /* PBXTargetDependency */,
-				DA1959FA99209080C3F5D4A338F7B170 /* PBXTargetDependency */,
-				7215E8639362A5F6F01F0F8D5A6AF9C3 /* PBXTargetDependency */,
-				3B7B64E0C45E249846A4CBD0E7F6759B /* PBXTargetDependency */,
+				575B57AFF5762E8BC6109A88C91AE49B /* PBXTargetDependency */,
+				8A4711A84E9159D233DA614C666F26DB /* PBXTargetDependency */,
+				D3AB64E3793DF4E50B7BE84A82EBE45A /* PBXTargetDependency */,
+				159BD799D897D14382959796F9C3D1A3 /* PBXTargetDependency */,
+				C7F546C06246AE7A70FF75A298B46576 /* PBXTargetDependency */,
 			);
 			name = "Pods-xpayr";
 			productName = "Pods-xpayr";
-			productReference = F49D7B380EAB906895E886270EB61953 /* Pods_xpayr.framework */;
+			productReference = F3D6ED3903D1A8D2C76C78E85EA896D3 /* Pods_xpayr.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		829A6F701360CC3F91CF141B378CF1B5 /* Cards */ = {
+		7B29B68271697A03B932F28BA3A901F4 /* SwipeCellKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE47886B5F20A116D50208CE20990317 /* Build configuration list for PBXNativeTarget "Cards" */;
+			buildConfigurationList = 08615514CF491E36788394A52EF010EE /* Build configuration list for PBXNativeTarget "SwipeCellKit" */;
 			buildPhases = (
-				5B271B50387D4F1C81DCA112939B6A85 /* Sources */,
-				E983DF4C39BF3C50D30683F79466E49E /* Frameworks */,
-				B7AF947CEC15B67B18EE73BCEF2AC222 /* Headers */,
+				3B977C01CFC0BBEA71AEBC65C849365C /* Sources */,
+				DAC892F5891A8A13E03885B46E270EAF /* Frameworks */,
+				6826B23452A76CE39587B66AC51479D4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Cards;
-			productName = Cards;
-			productReference = 391C95809D43EDC2954DBA49DC09852E /* Cards.framework */;
+			name = SwipeCellKit;
+			productName = SwipeCellKit;
+			productReference = B3882AFF0DC90F932DBF065BA129DA04 /* SwipeCellKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		964049909C75EBC6A7F5B7FDCE4D6BF7 /* Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE991C295A246F13372B748BB523C4FE /* Build configuration list for PBXNativeTarget "Player" */;
+			buildPhases = (
+				76AA4B2AB95AD9B24F2DAE1BDBBECCB5 /* Sources */,
+				2835143667F679853967BCE042FEA4A4 /* Frameworks */,
+				EB1D8B82EC0EAA3BDBCA3F6B3E16E3C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Player;
+			productName = Player;
+			productReference = DE30BA51FB3CC536BE9C492FF0DB17F9 /* Player.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -696,15 +789,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 292093E902A3D528F011DA56D9B1D817 /* Products */;
+			productRefGroup = 44D83D285FA3BF787AE84412E0F43930 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				829A6F701360CC3F91CF141B378CF1B5 /* Cards */,
+				1B91CA4773AECD154171A27CEE93017A /* Cards */,
 				1691E754022217B52671D98A23731A08 /* Disk */,
 				279AA6726F52A334C45E85774BD21A3D /* IQKeyboardManager */,
-				69612F7E90B022B75938B573949523AE /* Pods-xpayr */,
-				0497D11A44EF9DA6E2E0F60BE9D158A7 /* SwipeCellKit */,
+				964049909C75EBC6A7F5B7FDCE4D6BF7 /* Player */,
+				5E62BB0EDCFE1F73AA4DC7B00FE11B94 /* Pods-xpayr */,
+				7B29B68271697A03B932F28BA3A901F4 /* SwipeCellKit */,
 			);
 		};
 /* End PBXProject section */
@@ -721,26 +815,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		44791EA2D83B25F31B5B892CE8F311A9 /* Sources */ = {
+		3B977C01CFC0BBEA71AEBC65C849365C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC3C31FD06C7533B431D24DFFD913B2 /* Pods-xpayr-dummy.m in Sources */,
+				1DD9C38A3E31DAEADD4B9ACC5425E22D /* Extensions.swift in Sources */,
+				7B4CCA2A4ED649512F9698EDB43BEEDC /* Swipeable.swift in Sources */,
+				2BEA1EED941F1256FDD075165AF9FBF2 /* SwipeAction.swift in Sources */,
+				E0C5B751E1C94120A7A399264CC5E5CA /* SwipeActionButton.swift in Sources */,
+				046FF569FFF266C0292CF8FD65FFE960 /* SwipeActionsView.swift in Sources */,
+				0FF281FFD9D868B5DF2C322B33420D41 /* SwipeActionTransitioning.swift in Sources */,
+				3670A18804A88A0B6778C3631CB00860 /* SwipeAnimator.swift in Sources */,
+				4659ED112D7BB8865FD9161A3CF927A4 /* SwipeCellKit-dummy.m in Sources */,
+				8660DBE8FA37A4C7E282296CE0120FB6 /* SwipeExpanding.swift in Sources */,
+				196930417D48833DEB7CBE422AC3A616 /* SwipeExpansionStyle.swift in Sources */,
+				DA54B9DCF1529B059B32DCEE18679E98 /* SwipeFeedback.swift in Sources */,
+				A4F40E29F3D06F8988151B8E1F43DDCA /* SwipeTableOptions.swift in Sources */,
+				15E7D3B883475F50354A90D685892645 /* SwipeTableViewCell+Accessibility.swift in Sources */,
+				A9FA00C34A353D8BCC7D511F02F97C28 /* SwipeTableViewCell+Display.swift in Sources */,
+				DC10C29C53056C6547794476D9434777 /* SwipeTableViewCell.swift in Sources */,
+				751F10C05FCCFB3F785D5EF6A84272F8 /* SwipeTableViewCellDelegate.swift in Sources */,
+				41D0E42227B6010F9BBA2696BABCD11D /* SwipeTransitionLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B271B50387D4F1C81DCA112939B6A85 /* Sources */ = {
+		76AA4B2AB95AD9B24F2DAE1BDBBECCB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				906BF2D00B5C46CB5C22C1547026058B /* Card.swift in Sources */,
-				C263877B44D44244DCEC11C8AA4955AD /* CardArticle.swift in Sources */,
-				4EFC7FF2EF833EFF8478477A7C9A5497 /* CardGroup.swift in Sources */,
-				0F40D6CEA9466B1CE30358B27EB84037 /* CardGroupSliding.swift in Sources */,
-				C9187E0C479F6E619EEB229AFD7F775A /* CardHighlight.swift in Sources */,
-				983540427AEC05CB5551DF0C6CB7D5B1 /* CardPlayer.swift in Sources */,
-				D2DFA56FF1C87CE27808A2975D8C1D15 /* Cards-dummy.m in Sources */,
-				5389710D30B91468802ABAEA770AD1F6 /* Player_by_Patric_Piemonte.swift in Sources */,
+				AE7B22FDBC7ADF8F01095EC7074FC23B /* Player-dummy.m in Sources */,
+				8B624C5A65233DA21DDBD12A46A44F5C /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,27 +870,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B08FA6AA0DE7549498393437D42C580E /* Sources */ = {
+		C05176ECEF345050E8ABB99B39A5D7B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AF7B0DAC79120D5532FC387A34927FF /* Extensions.swift in Sources */,
-				750EDA365066D4B85047B0D0F1664169 /* Swipeable.swift in Sources */,
-				79DCCBCE8E0D7E991EE20614C1BB745C /* SwipeAction.swift in Sources */,
-				467EC8435B954B1F078E6084032231B9 /* SwipeActionButton.swift in Sources */,
-				02AB7B9AB21AD8EBB4D2016B247B6F4D /* SwipeActionsView.swift in Sources */,
-				749DF54A76C1CF341463F66D80E8208B /* SwipeActionTransitioning.swift in Sources */,
-				5747A4944283AD31F2B7B5BFE2C1AEBC /* SwipeAnimator.swift in Sources */,
-				879E43C92A05A87441A67F3C4E33FDEF /* SwipeCellKit-dummy.m in Sources */,
-				FC17098A548F6DFC5423004B6C8B1F43 /* SwipeExpanding.swift in Sources */,
-				F2D0C49E2158673FE84E46B5B3EBE33F /* SwipeExpansionStyle.swift in Sources */,
-				FACC48A05AB79FAE5C8ADAC8D55EA86B /* SwipeFeedback.swift in Sources */,
-				0C25BF8CB3E93DD8F61CD9EFBBE0C794 /* SwipeTableOptions.swift in Sources */,
-				3FCD789B6A627D64A9D5FF0AC2CB61DD /* SwipeTableViewCell+Accessibility.swift in Sources */,
-				3CC781A8EE90E5704B824F84AF260185 /* SwipeTableViewCell+Display.swift in Sources */,
-				D07E90D53C84BDDC195D61477987A041 /* SwipeTableViewCell.swift in Sources */,
-				D61B94713DB5A9DD178198CB226E8CE7 /* SwipeTableViewCellDelegate.swift in Sources */,
-				6254CF91EB337A7E033BB96EF7FE423D /* SwipeTransitionLayout.swift in Sources */,
+				BBEBB428CC404148BC02E660E85A2851 /* Pods-xpayr-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD1E5D09AB15EB7CE53F0BCDE2B458D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B6B69A24982C288E27452037D3B008 /* Card.swift in Sources */,
+				9FC661A5F4EA790951C89F2FD12E9D38 /* CardArticle.swift in Sources */,
+				35D4B5B4996012813B63CA1EB822F5A7 /* CardGroup.swift in Sources */,
+				E3C93AF579B04A95B3CEB394A224B864 /* CardGroupSliding.swift in Sources */,
+				A8AE63C63FB2B5B8033566E5938B6596 /* CardHighlight.swift in Sources */,
+				F274CA356096045B4DCA96D433B32269 /* CardPlayer.swift in Sources */,
+				30F0779EA636ABAFD6D8E3D3010B9A1D /* Cards-dummy.m in Sources */,
+				CD986010254B1BB67A6D5F4EA72CC9FD /* LayoutHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,139 +914,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B7B64E0C45E249846A4CBD0E7F6759B /* PBXTargetDependency */ = {
+		159BD799D897D14382959796F9C3D1A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwipeCellKit;
-			target = 0497D11A44EF9DA6E2E0F60BE9D158A7 /* SwipeCellKit */;
-			targetProxy = C2D4C545C4BE3452C0FC8B71CA3CF7AC /* PBXContainerItemProxy */;
+			name = Player;
+			target = 964049909C75EBC6A7F5B7FDCE4D6BF7 /* Player */;
+			targetProxy = 0EB88B3BB378293712A5DF3CECFB7A4C /* PBXContainerItemProxy */;
 		};
-		7215E8639362A5F6F01F0F8D5A6AF9C3 /* PBXTargetDependency */ = {
+		251F7BE324EDEC6C96384A82888B76B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = IQKeyboardManager;
-			target = 279AA6726F52A334C45E85774BD21A3D /* IQKeyboardManager */;
-			targetProxy = 67DB6BE84B1500E012B51E9F09FC4014 /* PBXContainerItemProxy */;
+			name = Player;
+			target = 964049909C75EBC6A7F5B7FDCE4D6BF7 /* Player */;
+			targetProxy = 385BC41EEC6B3BE55B6A15D898DF26C4 /* PBXContainerItemProxy */;
 		};
-		C9D1DB2703166E1663AAE3B14CA08560 /* PBXTargetDependency */ = {
+		575B57AFF5762E8BC6109A88C91AE49B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cards;
-			target = 829A6F701360CC3F91CF141B378CF1B5 /* Cards */;
-			targetProxy = C4FD559254A42644F4D0C687886F8B78 /* PBXContainerItemProxy */;
+			target = 1B91CA4773AECD154171A27CEE93017A /* Cards */;
+			targetProxy = DDE67AD55A848B28219DEC3A84C85F6D /* PBXContainerItemProxy */;
 		};
-		DA1959FA99209080C3F5D4A338F7B170 /* PBXTargetDependency */ = {
+		8A4711A84E9159D233DA614C666F26DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Disk;
 			target = 1691E754022217B52671D98A23731A08 /* Disk */;
-			targetProxy = 75E183BD38047A8FC5997AE53919884C /* PBXContainerItemProxy */;
+			targetProxy = 7748317CE97062BEF2EFC33BEB56379C /* PBXContainerItemProxy */;
+		};
+		C7F546C06246AE7A70FF75A298B46576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeCellKit;
+			target = 7B29B68271697A03B932F28BA3A901F4 /* SwipeCellKit */;
+			targetProxy = 726083F67D15D961194A2DFBCC2EB658 /* PBXContainerItemProxy */;
+		};
+		D3AB64E3793DF4E50B7BE84A82EBE45A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManager;
+			target = 279AA6726F52A334C45E85774BD21A3D /* IQKeyboardManager */;
+			targetProxy = AF3105A8EA566D763CB22E1222CE6034 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E738276DFF8B0FEFFC60250F2FC0AD3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF6919245E157AA22FCDDB2B6FA8B3C /* Cards.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Cards/Cards-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cards/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Cards/Cards.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Cards;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4E318D66792F66DB1BD24608804A8367 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF6919245E157AA22FCDDB2B6FA8B3C /* Cards.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Cards/Cards-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cards/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Cards/Cards.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Cards;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		539C3C0D0357856D59D820FD026B468C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6B123ED01FA98FD61765CC385331BCC /* SwipeCellKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeCellKit/SwipeCellKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeCellKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwipeCellKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		71E0A987DD1BBA484DF9FA517EF6F617 /* Debug */ = {
+		36ECA6CFD1FD49D252E2F1691D0AA420 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A57E5652A24E270E1E91E405A4FE817E /* Pods-xpayr.debug.xcconfig */;
 			buildSettings = {
@@ -982,44 +992,9 @@
 			};
 			name = Debug;
 		};
-		72CC2B78360E855B5081F743FC682A22 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6B123ED01FA98FD61765CC385331BCC /* SwipeCellKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwipeCellKit/SwipeCellKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwipeCellKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwipeCellKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		7F063B03D0693F78750ECADD7BC61E9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D730ED0D022EBD2C7538275EFC2BA1F /* IQKeyboardManager.xcconfig */;
+			baseConfigurationReference = 1E3AF17B01D7445BED640BAA7B5E9B64 /* IQKeyboardManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1044,6 +1019,76 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F0773B50699B23DEDFBA2BAF772F6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573DEC85442D49DF517968A9A15BDA64 /* Player.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Player/Player-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Player/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Player/Player.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Player;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F3971FDB5E6C2C65618014AF9D22837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 337A0021EEAC7C7EDF146CA75DE06D71 /* Cards.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cards/Cards-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cards/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cards/Cards.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cards;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1102,7 +1147,7 @@
 		};
 		9E8026F3A3853DDA71BFBA0F1D774AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D730ED0D022EBD2C7538275EFC2BA1F /* IQKeyboardManager.xcconfig */;
+			baseConfigurationReference = 1E3AF17B01D7445BED640BAA7B5E9B64 /* IQKeyboardManager.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1136,7 +1181,7 @@
 		};
 		A28030B942234AD0694126B6FCBEE3BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D5EB8F122E45571CEF451F8F3E396AB /* Disk.xcconfig */;
+			baseConfigurationReference = 15DA388EA737612E26EC6F7919115D9B /* Disk.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1213,9 +1258,44 @@
 			};
 			name = Release;
 		};
-		EF4BD82937C22177EB123C847713CFC5 /* Debug */ = {
+		BF22667CEF9224250906140EB4EE97E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D5EB8F122E45571CEF451F8F3E396AB /* Disk.xcconfig */;
+			baseConfigurationReference = F0EDCD5B9405C64741422E81476B74D1 /* SwipeCellKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeCellKit/SwipeCellKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeCellKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwipeCellKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCEB137EF5A88575D81A9093FCA506DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573DEC85442D49DF517968A9A15BDA64 /* Player.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1229,14 +1309,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Disk/Disk-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Disk/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Player/Player-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Player/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Disk/Disk.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Player/Player.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Disk;
+				PRODUCT_NAME = Player;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1248,7 +1328,7 @@
 			};
 			name = Debug;
 		};
-		F19AAF9323FA9F9082CB8D26EC528A3C /* Release */ = {
+		D23A8D9ADDA303289BCFE18B038D2CBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF7360A64921304266F960ADBE51C509 /* Pods-xpayr.release.xcconfig */;
 			buildSettings = {
@@ -1286,9 +1366,132 @@
 			};
 			name = Release;
 		};
+		D8DA41E3E6902270CB9D057A900C5D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 337A0021EEAC7C7EDF146CA75DE06D71 /* Cards.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cards/Cards-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cards/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cards/Cards.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cards;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE096262B61D50B91F1D8FADD39F20C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0EDCD5B9405C64741422E81476B74D1 /* SwipeCellKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeCellKit/SwipeCellKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeCellKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwipeCellKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF4BD82937C22177EB123C847713CFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DA388EA737612E26EC6F7919115D9B /* Disk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Disk/Disk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Disk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Disk/Disk.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Disk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04A8CF0CE19433E59EED28D4E3205FD7 /* Build configuration list for PBXNativeTarget "Pods-xpayr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36ECA6CFD1FD49D252E2F1691D0AA420 /* Debug */,
+				D23A8D9ADDA303289BCFE18B038D2CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08615514CF491E36788394A52EF010EE /* Build configuration list for PBXNativeTarget "SwipeCellKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE096262B61D50B91F1D8FADD39F20C9 /* Debug */,
+				BF22667CEF9224250906140EB4EE97E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1298,11 +1501,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44893FC77590F1E8824ED21D5934983C /* Build configuration list for PBXNativeTarget "SwipeCellKit" */ = {
+		32790BB1A54C146C6E7FB02139D2FD41 /* Build configuration list for PBXNativeTarget "Cards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72CC2B78360E855B5081F743FC682A22 /* Debug */,
-				539C3C0D0357856D59D820FD026B468C /* Release */,
+				D8DA41E3E6902270CB9D057A900C5D81 /* Debug */,
+				8F3971FDB5E6C2C65618014AF9D22837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1316,29 +1519,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BE991C295A246F13372B748BB523C4FE /* Build configuration list for PBXNativeTarget "Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEB137EF5A88575D81A9093FCA506DB /* Debug */,
+				8F0773B50699B23DEDFBA2BAF772F6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CBD9A2E3065E5BD8E663E08B81AE10F3 /* Build configuration list for PBXNativeTarget "Disk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF4BD82937C22177EB123C847713CFC5 /* Debug */,
 				A28030B942234AD0694126B6FCBEE3BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE47886B5F20A116D50208CE20990317 /* Build configuration list for PBXNativeTarget "Cards" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4E318D66792F66DB1BD24608804A8367 /* Debug */,
-				0E738276DFF8B0FEFFC60250F2FC0AD3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEDCE55445C8EE27B01D4CCFC64B9B68 /* Build configuration list for PBXNativeTarget "Pods-xpayr" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71E0A987DD1BBA484DF9FA517EF6F617 /* Debug */,
-				F19AAF9323FA9F9082CB8D26EC528A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

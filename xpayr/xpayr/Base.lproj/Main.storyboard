@@ -62,7 +62,7 @@
         <!--Creation View Controller-->
         <scene sceneID="rMT-03-Pr5">
             <objects>
-                <viewController id="h4z-tp-qgW" customClass="CreationViewController" customModule="xpayr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardContent" id="h4z-tp-qgW" customClass="CreationViewController" customModule="xpayr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EF4-O6-Khk"/>
                         <viewControllerLayoutGuide type="bottom" id="yGa-we-xD3"/>
