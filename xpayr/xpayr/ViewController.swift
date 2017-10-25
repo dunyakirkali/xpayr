@@ -105,9 +105,23 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     // TODO: (dunyakirkali) Move to presenter
     public func remove(at: IndexPath) {
-        self.items?.remove(at: at.row)
-        tableView.deleteRows(at: [at], with: .fade)
-        saveData()
+        let alertController = UIAlertController(title: nil, message: "Sure?", preferredStyle: .actionSheet)
+        let cell = self.tableView.cellForRow(at: at) as! SwipeTableViewCell
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
+            cell.hideSwipe(animated: true)
+        }
+        alertController.addAction(cancelAction)
+        
+        let OKAction = UIAlertAction(title: "OK", style: .default) { action in
+            cell.hideSwipe(animated: true)
+            self.items?.remove(at: at.row)
+            self.tableView.deleteRows(at: [at], with: .fade)
+            self.saveData()
+        }
+        alertController.addAction(OKAction)
+        
+        present(alertController, animated: true)
     }
     
     // TODO: (dunyakirkali) Move to presenter
