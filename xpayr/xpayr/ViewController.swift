@@ -44,7 +44,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 270
+        return 350
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
