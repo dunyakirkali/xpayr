@@ -112,7 +112,7 @@
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                             </textField>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-M3-aH1">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-M3-aH1">
                                                 <rect key="frame" x="0.0" y="133" width="375" height="133"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="527374917.314596">
                                                     <!--2017-09-17 21:01:57 +0000-->

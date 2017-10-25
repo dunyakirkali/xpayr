@@ -144,8 +144,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     
     private func prepareNotification(for item: Item) {
         let content: UNNotificationContent = item.notificationContent
-        let date = Date(timeIntervalSinceNow: 10)
-        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date)
+        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: item.expirationDate)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
         let identifier = "UYLLocalNotification"
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
