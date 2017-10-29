@@ -29,6 +29,11 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if items!.count == 0 {
+            tableView.backgroundView = Bundle.main.loadNibNamed("EmptyView", owner: nil, options: nil)?.first as! UIView
+        } else {
+            tableView.backgroundView = nil
+        }
         return items!.count
     }
 
