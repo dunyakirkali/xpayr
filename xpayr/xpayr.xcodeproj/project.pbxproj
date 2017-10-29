@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		057F3FB21FA656F3006F612E /* empty_box.json in Resources */ = {isa = PBXBuildFile; fileRef = 057F3FB11FA656F3006F612E /* empty_box.json */; };
+		103ABB371FA683EA0081E350 /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = 103ABB351FA683E90081E350 /* vcTransition2.json */; };
+		103ABB381FA683EA0081E350 /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = 103ABB361FA683E90081E350 /* vcTransition1.json */; };
 		105747791F6F134800154ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747781F6F134800154ECB /* AppDelegate.swift */; };
 		1057477B1F6F134800154ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057477A1F6F134800154ECB /* ViewController.swift */; };
 		1057477E1F6F134800154ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1057477C1F6F134800154ECB /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		057F3FB11FA656F3006F612E /* empty_box.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_box.json; sourceTree = "<group>"; };
+		103ABB351FA683E90081E350 /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		103ABB361FA683E90081E350 /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
 		105747751F6F134800154ECB /* xpayr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xpayr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105747781F6F134800154ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1057477A1F6F134800154ECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		057F3FB01FA656E6006F612E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				103ABB361FA683E90081E350 /* vcTransition1.json */,
+				103ABB351FA683E90081E350 /* vcTransition2.json */,
 				057F3FB11FA656F3006F612E /* empty_box.json */,
 			);
 			name = Assets;
@@ -209,8 +215,10 @@
 			files = (
 				105747831F6F134800154ECB /* LaunchScreen.storyboard in Resources */,
 				105747941F6F1D1900154ECB /* ItemCell.xib in Resources */,
+				103ABB381FA683EA0081E350 /* vcTransition1.json in Resources */,
 				105747801F6F134800154ECB /* Assets.xcassets in Resources */,
 				057F3FB21FA656F3006F612E /* empty_box.json in Resources */,
+				103ABB371FA683EA0081E350 /* vcTransition2.json in Resources */,
 				1057477E1F6F134800154ECB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 2FBY22AJDG;
 				INFOPLIST_FILE = xpayr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -445,7 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 2FBY22AJDG;
 				INFOPLIST_FILE = xpayr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

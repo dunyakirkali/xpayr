@@ -12,7 +12,7 @@ import Disk
 import UserNotifications
 import Lottie
 
-class ViewController: UITableViewController, SwipeTableViewCellDelegate {
+class ViewController: UITableViewController, SwipeTableViewCellDelegate, UIViewControllerTransitioningDelegate {
 
     // MARK: - IBOutlets
     @IBOutlet weak var addButton: UIBarButtonItem!
@@ -82,6 +82,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     // MARK: - Segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC: CreationViewController = segue.destination as! CreationViewController
+        destVC.transitioningDelegate = self
 
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             destVC.item = self.items?[selectedIndexPath.row]
@@ -101,6 +102,16 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
                 self.add(item: item, at: newIndexPath)
             }
         }
+    }
+
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let animationController = LOTAnimationTransitionController(animationNamed: "vcTransition1", fromLayerNamed: "outLayer", toLayerNamed: "inLayer", applyAnimationTransform: false)
+        return animationController
+    }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let animationController = LOTAnimationTransitionController(animationNamed: "vcTransition2", fromLayerNamed: "outLayer", toLayerNamed: "inLayer", applyAnimationTransform: false)
+        return animationController
     }
     
     // TODO: (dunyakirkali) Move to presenter
@@ -135,7 +146,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
             self.saveData()
         }
         alertController.addAction(OKAction)
-        
+
         present(alertController, animated: true)
     }
     
