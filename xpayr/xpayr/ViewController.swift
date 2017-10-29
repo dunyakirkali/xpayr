@@ -10,6 +10,7 @@ import UIKit
 import SwipeCellKit
 import Disk
 import UserNotifications
+import Lottie
 
 class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
@@ -27,8 +28,22 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         loadData()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if items!.count == 0 {
+            let animationView = LOTAnimationView(name: "empty_box")
+            animationView.contentMode = .scaleAspectFit
+            animationView.loopAnimation = true
+            animationView.play()
+            tableView.backgroundView = animationView
+        } else {
+            tableView.backgroundView = nil
+        }
         return items!.count
     }
 
