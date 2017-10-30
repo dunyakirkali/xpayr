@@ -102,8 +102,13 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     
     // TODO: (dunyakirkali) Move to presenter
     private func update(item: Item, at: IndexPath) {
+
+        removeNotification(for: item)
+        prepareNotification(for: item)
+
         self.items?[at.row] = item
         tableView.reloadRows(at: [at], with: .none)
+
         saveData()
     }
     
@@ -127,6 +132,8 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         
         let OKAction = UIAlertAction(title: "OK", style: .default) { action in
             cell.hideSwipe(animated: true)
+            let item = self.items![at.row]
+            self.removeNotification(for: item)
             self.items?.remove(at: at.row)
             self.tableView.deleteRows(at: [at], with: .fade)
             self.saveData()
@@ -156,7 +163,19 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         }
         tableView.reloadData()
     }
-    
+
+    private func removeNotification(for item: Item) {
+        let scheduledNotifications: [UILocalNotification]? = UIApplication.shared.scheduledLocalNotifications
+        guard scheduledNotifications != nil else {return}
+
+        for notification in scheduledNotifications! {
+            if (notification.userInfo!["UUID"] as! String == item.UUID) {
+                UIApplication.shared.cancelLocalNotification(notification)
+                break
+            }
+        }
+    }
+
     private func prepareNotification(for item: Item) {
         let notification = UILocalNotification()
 
