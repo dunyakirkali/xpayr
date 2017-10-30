@@ -16,21 +16,21 @@ class Item: Codable  {
     var name: String?
     var imagePath: String?
     var expirationDate: Date
-    var notificationContent: UNNotificationContent {
-        get {
-            let content = UNMutableNotificationContent()
-            content.title = "\(name ?? "An item") is about to expire!"
-            content.body = "Buy some milk"
-            content.sound = UNNotificationSound.default()
-            return content
-        }
+    var UUID: String
+    var notificationContent: String {
+        return "\(name ?? "An item") is about to expire!"
     }
     
     // MARK: - Initializers
-    init(name: String?, imagePath: String?, expirationDate: Date) {
+    init(name: String?, imagePath: String?, expirationDate: Date, UUID: String) {
         self.name = name
         self.imagePath = imagePath
         self.expirationDate = expirationDate
+        self.UUID = UUID
+    }
+
+    var hasExpired: Bool {
+        return (Date().compare(self.expirationDate) == ComparisonResult.orderedDescending)
     }
 
     // MARK: - Deinitializer

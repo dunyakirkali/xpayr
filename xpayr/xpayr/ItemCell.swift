@@ -33,6 +33,12 @@ class ItemCell: SwipeTableViewCell {
             dateFormatter.locale = Locale.current
             expirationLabel.text = dateFormatter.string(from: (item?.expirationDate)!)
 
+            if (item?.hasExpired)! {
+                expirationLabel.textColor = UIColor.red
+            } else {
+                expirationLabel.textColor = UIColor.black
+            }
+
             guard let imgPath = item?.imagePath else {
                 return
             }
