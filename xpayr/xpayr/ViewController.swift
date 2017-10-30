@@ -166,29 +166,28 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     private func removeNotification(for item: Item) {
         if item.hasExpired { return }
-        let scheduledNotifications: [UILocalNotification]? = UIApplication.shared.scheduledLocalNotifications
-        guard scheduledNotifications != nil else {return}
-
-        for notification in scheduledNotifications! {
-            if (notification.userInfo!["UUID"] as! String == item.UUID) {
-                UIApplication.shared.cancelLocalNotification(notification)
-                break
-            }
-        }
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [item.UUID])
     }
 
     private func prepareNotification(for item: Item) {
-        let notification = UILocalNotification()
+        let center = UNUserNotificationCenter.current()
+        let content = UNMutableNotificationContent()
+//        let attachment = try! UNNotificationAttachment(identifier: "image", url: item.imagePath!, options: [:])
 
-        notification.alertBody = item.notificationContent
-        notification.alertAction = "open"
-        notification.fireDate = item.expirationDate
-        notification.soundName = UILocalNotificationDefaultSoundName
-        notification.userInfo = [
-            "UUID": item.UUID
-        ]
+        content.title = item.notificationTitle
+        content.body = item.notificationBody
+        content.sound = UNNotificationSound.default()
+        content.categoryIdentifier = "DeleteCategory"
+//        content.attachments = [attachment]
 
-        UIApplication.shared.scheduleLocalNotification(notification)
+        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: item.expirationDate)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+        let request = UNNotificationRequest(identifier: item.UUID, content: content, trigger: trigger)
+        center.add(request, withCompletionHandler: { (error) in
+            if let error = error {
+                print(error)
+            }
+        })
     }
 }
 

@@ -17,8 +17,17 @@ class Item: Codable  {
     var imagePath: String?
     var expirationDate: Date
     var UUID: String
-    var notificationContent: String {
-        return "\(name) is about to expire!"
+    var notificationTitle: String {
+        return "\"\(name)\" has expired!"
+    }
+    var notificationBody: String {
+        return "on \(formattedDate)"
+    }
+    var formattedDate: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd MMM yyyy HH:mm"
+        formatter.locale = Locale.current
+        return formatter.string(from: expirationDate)
     }
     
     // MARK: - Initializers

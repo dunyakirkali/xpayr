@@ -27,11 +27,7 @@ class ItemCell: SwipeTableViewCell {
     var item: Item? {
         didSet {
             nameLabel.text = item?.name
-
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd MMM yyyy HH:mm"
-            dateFormatter.locale = Locale.current
-            expirationLabel.text = dateFormatter.string(from: (item?.expirationDate)!)
+            expirationLabel.text = item?.formattedDate
 
             if (item?.hasExpired)! {
                 expirationLabel.textColor = UIColor.red

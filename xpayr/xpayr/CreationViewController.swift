@@ -54,7 +54,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        let imagePath: String = "Album/\(item?.UUID).jpeg"
+        let imagePath: String = "Album/\(item!.UUID).jpeg"
         
         do {
             try Disk.save(image, to: .documents, as: imagePath)

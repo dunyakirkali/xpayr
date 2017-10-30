@@ -38,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
             print("Granted? \(granted)")
         }
+
+        let deleteAction = UNNotificationAction(identifier: "DeleteAction", title: "Trash", options: [.destructive])
+        let category = UNNotificationCategory(identifier: "ItemCategory", actions: [deleteAction], intentIdentifiers: [], options: [])
+        center.setNotificationCategories([category])
         
         return true
     }
@@ -60,7 +64,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+
         NotificationCenter.default.post(name: Notification.Name(rawValue: "ShouldRefresh"), object: self)
     }
 
