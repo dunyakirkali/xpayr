@@ -13,16 +13,16 @@ import UserNotifications
 
 class Item: Codable  {
     // MARK: - Properties
-    var name: String?
+    var name: String
     var imagePath: String?
     var expirationDate: Date
     var UUID: String
     var notificationContent: String {
-        return "\(name ?? "An item") is about to expire!"
+        return "\(name) is about to expire!"
     }
     
     // MARK: - Initializers
-    init(name: String?, imagePath: String?, expirationDate: Date, UUID: String) {
+    init(name: String, imagePath: String?, expirationDate: Date, UUID: String) {
         self.name = name
         self.imagePath = imagePath
         self.expirationDate = expirationDate
@@ -35,12 +35,9 @@ class Item: Codable  {
 
     // MARK: - Deinitializer
     deinit {
-        guard let imgPath = imagePath else {
-            return
-        }
+        guard let imgPath = imagePath else { return }
         
         do {
-            print("Removed image")
             try Disk.remove(imgPath, from: .documents)
         } catch {
             print("Failed to remove image")

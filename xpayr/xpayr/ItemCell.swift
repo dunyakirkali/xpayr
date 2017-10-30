@@ -29,7 +29,7 @@ class ItemCell: SwipeTableViewCell {
             nameLabel.text = item?.name
 
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd MMM yyyy"
+            dateFormatter.dateFormat = "dd MMM yyyy HH:mm"
             dateFormatter.locale = Locale.current
             expirationLabel.text = dateFormatter.string(from: (item?.expirationDate)!)
 

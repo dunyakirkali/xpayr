@@ -12,7 +12,6 @@ import Disk
 class CreationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: - Properties
     public var item: Item?
-    var sticks: String = ""
 
     // MARK: - Outlets
     @IBOutlet weak var picker: UIDatePicker!
@@ -55,8 +54,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        sticks = String(Date().timeIntervalSince1970)
-        let imagePath: String = "Album/\(sticks).jpeg"
+        let imagePath: String = "Album/\(item?.UUID).jpeg"
         
         do {
             try Disk.save(image, to: .documents, as: imagePath)

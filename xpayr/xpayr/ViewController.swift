@@ -18,7 +18,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     @IBOutlet weak var addButton: UIBarButtonItem!
 
     // MARK: - Properties
-    var items: [Item]?
+    var items: [Item] = [Item]()
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if items!.count == 0 {
+        if items.count == 0 {
             let animationView = LOTAnimationView(name: "empty_box")
             animationView.contentMode = .scaleAspectFit
             animationView.loopAnimation = true
@@ -41,7 +41,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         } else {
             tableView.backgroundView = nil
         }
-        return items!.count
+        return items.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,7 +52,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let tCell = cell as! ItemCell
         tCell.delegate = self
-        tCell.item = items?[indexPath.row]
+        tCell.item = items[indexPath.row]
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -81,7 +81,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         let destVC: CreationViewController = segue.destination as! CreationViewController
 
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
-            destVC.item = self.items?[selectedIndexPath.row]
+            destVC.item = self.items[selectedIndexPath.row]
         } else {
             destVC.item = Item(name: "", imagePath: nil, expirationDate: Date(), UUID: UUID().uuidString)
         }
@@ -94,7 +94,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
             }
         } else {
             if let sourceViewController = sender.source as? CreationViewController, let item = sourceViewController.item {
-                let newIndexPath = IndexPath(row: items!.count, section: 0)
+                let newIndexPath = IndexPath(row: items.count, section: 0)
                 self.add(item: item, at: newIndexPath)
             }
         }
@@ -106,7 +106,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         removeNotification(for: item)
         prepareNotification(for: item)
 
-        self.items?[at.row] = item
+        self.items[at.row] = item
         tableView.reloadRows(at: [at], with: .none)
 
         saveData()
@@ -114,7 +114,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     
     // TODO: (dunyakirkali) Move to presenter
     private func add(item: Item, at: IndexPath) {
-        self.items?.append(item)
+        self.items.append(item)
         tableView.insertRows(at: [at], with: .automatic)
         prepareNotification(for: item)
         saveData()
@@ -132,9 +132,9 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         
         let OKAction = UIAlertAction(title: "OK", style: .default) { action in
             cell.hideSwipe(animated: true)
-            let item = self.items![at.row]
+            let item = self.items[at.row]
             self.removeNotification(for: item)
-            self.items?.remove(at: at.row)
+            self.items.remove(at: at.row)
             self.tableView.deleteRows(at: [at], with: .fade)
             self.saveData()
         }
@@ -165,6 +165,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     }
 
     private func removeNotification(for item: Item) {
+        if item.hasExpired { return }
         let scheduledNotifications: [UILocalNotification]? = UIApplication.shared.scheduledLocalNotifications
         guard scheduledNotifications != nil else {return}
 
