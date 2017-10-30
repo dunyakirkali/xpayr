@@ -24,13 +24,10 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.loadData), name: NSNotification.Name(rawValue: "ShouldRefresh"), object: nil)
+
         tableView.register(UINib(nibName: "ItemCell", bundle: nil), forCellReuseIdentifier: "ItemCell")
         loadData()
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        tableView.reloadData()
     }
 
     // MARK: - UITableViewDataSource
@@ -86,7 +83,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             destVC.item = self.items?[selectedIndexPath.row]
         } else {
-            destVC.item = Item(name: "", imagePath: nil, expirationDate: Date())
+            destVC.item = Item(name: "", imagePath: nil, expirationDate: Date(), UUID: UUID().uuidString)
         }
     }
     
@@ -149,26 +146,29 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     }
 
     // TODO: (dunyakirkali) Move to presenter
-    private func loadData() {
+    @objc private func loadData() {
         do {
-            items = try Disk.retrieve("items.json", from: .documents, as: [Item].self)
+            items = try Disk.retrieve("items.json", from: .documents, as: [Item].self).sorted(by: {(left: Item, right: Item) -> Bool in
+                (left.expirationDate.compare(right.expirationDate) == .orderedAscending)
+            })
         } catch {
             items = [Item]()
         }
+        tableView.reloadData()
     }
     
     private func prepareNotification(for item: Item) {
-        let content: UNNotificationContent = item.notificationContent
-        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: item.expirationDate)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
-        let identifier = "UYLLocalNotification"
-        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-        let center = UNUserNotificationCenter.current()
-        center.add(request, withCompletionHandler: { (error) in
-            if let error = error {
-                print(error)
-            }
-        })
+        let notification = UILocalNotification()
+
+        notification.alertBody = item.notificationContent
+        notification.alertAction = "open"
+        notification.fireDate = item.expirationDate
+        notification.soundName = UILocalNotificationDefaultSoundName
+        notification.userInfo = [
+            "UUID": item.UUID
+        ]
+
+        UIApplication.shared.scheduleLocalNotification(notification)
     }
 }
 

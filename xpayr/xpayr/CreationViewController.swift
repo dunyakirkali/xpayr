@@ -24,7 +24,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
         
         field.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-        picker.minimumDate = Date()
+//        picker.minimumDate = Date()
         picker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
         
         if let item = item {
