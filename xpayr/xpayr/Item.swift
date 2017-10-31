@@ -41,15 +41,4 @@ class Item: Codable  {
     var hasExpired: Bool {
         return (Date().compare(self.expirationDate) == ComparisonResult.orderedDescending)
     }
-
-    // MARK: - Deinitializer
-    deinit {
-        guard let imgPath = imagePath else { return }
-        
-        do {
-            try Disk.remove(imgPath, from: .documents)
-        } catch {
-            print("Failed to remove image")
-        }
-    }
 }

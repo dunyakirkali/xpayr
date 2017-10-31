@@ -136,6 +136,13 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
             self.removeNotification(for: item)
             self.items.remove(at: at.row)
             self.tableView.deleteRows(at: [at], with: .fade)
+            guard let imgPath = item.imagePath else { return }
+            
+            do {
+                try Disk.remove(imgPath, from: .documents)
+            } catch {
+                print("Failed to remove image")
+            }
             self.saveData()
         }
         alertController.addAction(OKAction)
@@ -172,13 +179,21 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
     private func prepareNotification(for item: Item) {
         let center = UNUserNotificationCenter.current()
         let content = UNMutableNotificationContent()
-//        let attachment = try! UNNotificationAttachment(identifier: "image", url: item.imagePath!, options: [:])
+        
+        do {
+           let imageURL = try? Disk.getURL(for: "Album/\(item.UUID)", in: .documents)
+            if (imageURL != nil) {
+                let attachment = try? UNNotificationAttachment(identifier: "image", url: imageURL!, options: [:])
+                content.attachments = [attachment!]
+            }
+        } catch let error as NSError {
+            print(error)
+        }
 
         content.title = item.notificationTitle
         content.body = item.notificationBody
         content.sound = UNNotificationSound.default()
         content.categoryIdentifier = "DeleteCategory"
-//        content.attachments = [attachment]
 
         let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: item.expirationDate)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
