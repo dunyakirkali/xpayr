@@ -193,7 +193,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         content.title = item.notificationTitle
         content.body = item.notificationBody
         content.sound = UNNotificationSound.default()
-        content.categoryIdentifier = "DeleteCategory"
+        content.categoryIdentifier = "ItemCategory"
 
         let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: item.expirationDate)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
