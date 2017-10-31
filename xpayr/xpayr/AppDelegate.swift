@@ -68,6 +68,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         NotificationCenter.default.post(name: Notification.Name(rawValue: "ShouldRefresh"), object: self)
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler([.alert, .sound, .badge])
+    }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         NotificationCenter.default.post(name: Notification.Name(rawValue: "ShouldRefresh"), object: self)
