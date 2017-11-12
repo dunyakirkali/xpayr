@@ -8,6 +8,7 @@
 
 import UIKit
 import Disk
+import FirebaseCrash
 
 class CreationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: - Properties
@@ -34,7 +35,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
                     preview.image = try Disk.retrieve(imgPath, from: .documents, as: UIImage.self)
                     preview.isHidden = false
                 } catch {
-                    print("Could not retrieve image")
+                    FirebaseCrashMessage("Failed to retrieve image: \(imgPath)")
                 }
             }
         }
@@ -59,7 +60,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         do {
             try Disk.save(image, to: .documents, as: imagePath)
         } catch {
-            print("Image could not be saved")
+            FirebaseCrashMessage("Failed to save image: \(imagePath)")
         }
         item?.imagePath = imagePath
         preview.image = image

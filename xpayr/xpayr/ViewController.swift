@@ -11,6 +11,7 @@ import SwipeCellKit
 import Disk
 import UserNotifications
 import Lottie
+import FirebaseCrash
 
 class ViewController: UITableViewController, SwipeTableViewCellDelegate {
 
@@ -141,7 +142,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
             do {
                 try Disk.remove(imgPath, from: .documents)
             } catch {
-                print("Failed to remove image")
+                FirebaseCrashMessage("Failed to remove image: \(imgPath)")
             }
             self.saveData()
         }
@@ -155,7 +156,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         do {
             try Disk.save(items, to: .documents, as: "items.json")
         } catch {
-            print("Could not save data")
+            FirebaseCrashMessage("Failed to save items")
         }
     }
 
@@ -187,7 +188,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
                 content.attachments = [attachment!]
             }
         } catch let error as NSError {
-            print(error)
+            FirebaseCrashMessage(error.description)
         }
 
         content.title = item.notificationTitle
