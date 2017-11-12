@@ -130,7 +130,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         }
         alertController.addAction(cancelAction)
         
-        let OKAction = UIAlertAction(title: "OK", style: .default) { action in
+        let OKAction = UIAlertAction(title: "OK", style: .destructive) { action in
             cell.hideSwipe(animated: true)
             let item = self.items[at.row]
             self.removeNotification(for: item)
