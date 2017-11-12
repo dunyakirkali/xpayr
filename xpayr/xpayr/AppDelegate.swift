@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import IQKeyboardManager
 import UserNotifications
 
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        // Configure Firebase
+        FirebaseApp.configure()
+        
         // Navigation bar
         // TODO: (dunyakirkali) Refactor to extension
         UINavigationBar.appearance().shadowImage = UIImage()
@@ -66,6 +70,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
 
+        print(response)
+        if response.actionIdentifier == "DeleteAction" {
+            print("OK")
+        }
         NotificationCenter.default.post(name: Notification.Name(rawValue: "ShouldRefresh"), object: self)
     }
     

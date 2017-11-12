@@ -9,6 +9,7 @@
 import UIKit
 import SwipeCellKit
 import Disk
+import FirebaseCrash
 
 class ItemCell: SwipeTableViewCell {
 
@@ -42,7 +43,7 @@ class ItemCell: SwipeTableViewCell {
             do {
                 img.image = try Disk.retrieve(imgPath, from: .documents, as: UIImage.self)
             } catch {
-                print("Could not retrieve image")
+                FirebaseCrashMessage("Failed to retrieve image: \(imgPath)")
             }
         }
     }
