@@ -8,7 +8,7 @@
 
 import UIKit
 import Disk
-import FirebaseCrash
+import Crashlytics
 
 class CreationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: - Properties
@@ -34,8 +34,8 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
                 do {
                     preview.image = try Disk.retrieve(imgPath, from: .documents, as: UIImage.self)
                     preview.isHidden = false
-                } catch {
-                    FirebaseCrashMessage("Failed to retrieve image: \(imgPath)")
+                } catch let error {
+                    Crashlytics.sharedInstance().recordError(error)
                 }
             }
         }
@@ -59,8 +59,8 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         
         do {
             try Disk.save(image, to: .documents, as: imagePath)
-        } catch {
-            FirebaseCrashMessage("Failed to save image: \(imagePath)")
+        } catch let error {
+            Crashlytics.sharedInstance().recordError(error)
         }
         item?.imagePath = imagePath
         preview.image = image
