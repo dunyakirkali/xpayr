@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052329751FB8934D008482FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052329741FB8934D008482FB /* GoogleService-Info.plist */; };
 		057F3FB21FA656F3006F612E /* empty_box.json in Resources */ = {isa = PBXBuildFile; fileRef = 057F3FB11FA656F3006F612E /* empty_box.json */; };
 		105747791F6F134800154ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747781F6F134800154ECB /* AppDelegate.swift */; };
 		1057477B1F6F134800154ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057477A1F6F134800154ECB /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		052329741FB8934D008482FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		057F3FB11FA656F3006F612E /* empty_box.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_box.json; sourceTree = "<group>"; };
 		105747751F6F134800154ECB /* xpayr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xpayr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105747781F6F134800154ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				105747781F6F134800154ECB /* AppDelegate.swift */,
 				1057477F1F6F134800154ECB /* Assets.xcassets */,
 				105747841F6F134800154ECB /* Info.plist */,
+				052329741FB8934D008482FB /* GoogleService-Info.plist */,
 			);
 			path = xpayr;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				105747801F6F134800154ECB /* Assets.xcassets in Resources */,
 				057F3FB21FA656F3006F612E /* empty_box.json in Resources */,
 				1057477E1F6F134800154ECB /* Main.storyboard in Resources */,
+				052329751FB8934D008482FB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,16 +248,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-xpayr/Pods-xpayr-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
