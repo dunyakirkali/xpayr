@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		052329751FB8934D008482FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052329741FB8934D008482FB /* GoogleService-Info.plist */; };
 		057F3FB21FA656F3006F612E /* empty_box.json in Resources */ = {isa = PBXBuildFile; fileRef = 057F3FB11FA656F3006F612E /* empty_box.json */; };
+		1052B51F1FB9EB9D00B260D5 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 1052B51E1FB9EB9D00B260D5 /* style.json */; };
 		105747791F6F134800154ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747781F6F134800154ECB /* AppDelegate.swift */; };
 		1057477B1F6F134800154ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057477A1F6F134800154ECB /* ViewController.swift */; };
 		1057477E1F6F134800154ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1057477C1F6F134800154ECB /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		052329741FB8934D008482FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		057F3FB11FA656F3006F612E /* empty_box.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_box.json; sourceTree = "<group>"; };
+		1052B51E1FB9EB9D00B260D5 /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 		105747751F6F134800154ECB /* xpayr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xpayr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105747781F6F134800154ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1057477A1F6F134800154ECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		1052B51D1FB9EB8B00B260D5 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				1052B51E1FB9EB9D00B260D5 /* style.json */,
+			);
+			name = Style;
+			sourceTree = "<group>";
+		};
 		1057476C1F6F134800154ECB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		105747771F6F134800154ECB /* xpayr */ = {
 			isa = PBXGroup;
 			children = (
+				1052B51D1FB9EB8B00B260D5 /* Style */,
 				057F3FB01FA656E6006F612E /* Assets */,
 				105747961F6F21A000154ECB /* Storyboards */,
 				105747951F6F219400154ECB /* View Controllers */,
@@ -211,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				105747831F6F134800154ECB /* LaunchScreen.storyboard in Resources */,
+				1052B51F1FB9EB9D00B260D5 /* style.json in Resources */,
 				105747941F6F1D1900154ECB /* ItemCell.xib in Resources */,
 				105747801F6F134800154ECB /* Assets.xcassets in Resources */,
 				057F3FB21FA656F3006F612E /* empty_box.json in Resources */,
@@ -250,6 +262,7 @@
 				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/StyleKit/StyleKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -259,6 +272,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StyleKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",

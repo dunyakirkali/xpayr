@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import IQKeyboardManager
 import UserNotifications
+import StyleKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -46,6 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let deleteAction = UNNotificationAction(identifier: "DeleteAction", title: "Trash", options: [.destructive])
         let category = UNNotificationCategory(identifier: "ItemCategory", actions: [deleteAction], intentIdentifiers: [], options: [])
         center.setNotificationCategories([category])
+
+        // Style
+        if let styleFile = Bundle.main.url(forResource: "style", withExtension: "json") {
+            StyleKit(fileUrl: styleFile)?.apply()
+        }
         
         return true
     }
