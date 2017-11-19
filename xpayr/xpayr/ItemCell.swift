@@ -18,7 +18,7 @@ class ItemCell: SwipeTableViewCell {
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var container: UIView! {
         didSet {
-            container.layer.shadowColor = UIColor.black.cgColor
+            container.layer.shadowColor = UIColor.flatBlue.cgColor
             container.layer.shadowOpacity = 0.2
             container.layer.shadowOffset = CGSize.zero
             container.layer.shadowRadius = 10
@@ -31,9 +31,9 @@ class ItemCell: SwipeTableViewCell {
             expirationLabel.text = item?.formattedDate
 
             if (item?.hasExpired)! {
-                expirationLabel.textColor = UIColor.red
+                expirationLabel.textColor = UIColor.flatRed
             } else {
-                expirationLabel.textColor = UIColor.black
+                expirationLabel.textColor = UIColor.flatBlack
             }
 
             guard let imgPath = item?.imagePath else {

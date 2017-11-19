@@ -1,25 +1,27 @@
 PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
   - Crashlytics (3.9.3):
     - Fabric (~> 1.7.2)
-  - Disk (0.3.1)
+  - Disk (0.3.2)
   - Fabric (1.7.2)
-  - Firebase/Core (4.5.0):
-    - FirebaseAnalytics (= 4.0.4)
-    - FirebaseCore (= 4.0.10)
-  - FirebaseAnalytics (4.0.4):
+  - Firebase/Core (4.6.0):
+    - FirebaseAnalytics (= 4.0.5)
+    - FirebaseCore (= 4.0.11)
+  - FirebaseAnalytics (4.0.5):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseCore (4.0.10):
+  - FirebaseCore (4.0.11):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-    - nanopb (~> 0.3)
-  - FirebaseInstanceID (2.0.5)
+  - FirebaseInstanceID (2.0.6)
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/NSData+zlib (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - IQKeyboardManager (5.0.4)
-  - lottie-ios (2.1.3)
+  - IQKeyboardManager (5.0.6)
+  - lottie-ios (2.1.4)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -28,6 +30,7 @@ PODS:
   - SwipeCellKit (2.0.0)
 
 DEPENDENCIES:
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Crashlytics (~> 3.9.3)
   - Disk (~> 0.3.1)
   - Fabric (~> 1.7.2)
@@ -36,20 +39,30 @@ DEPENDENCIES:
   - lottie-ios
   - SwipeCellKit
 
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
-  Disk: 64f0f95a4163314aba6f09f010f17de964762140
+  Disk: 52ebc1656944971c73a661458713b3b7497c1b4c
   Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
-  Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
-  FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
-  FirebaseCore: da5e8e372cb6046212739a4d81e42d32c22907cc
-  FirebaseInstanceID: f2b688c66b972f30d7fa9f5f9f91455454a03b47
+  Firebase: 27321a925aa85520618255a7c630859e0502ccbd
+  FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
+  FirebaseCore: 2a946ece8fbe3ce1fdeeb55324f273caade22df9
+  FirebaseInstanceID: 24958382a1011bba5aaff37e334e7a650b9118f5
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  IQKeyboardManager: 1df9c0f147af1681cfb2d9977bc30309d45a7e76
-  lottie-ios: 8c150606598931621e927377f1426d2d3e99282d
+  IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
+  lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SwipeCellKit: 349c61ffde96ac3ae51c2691a03e421b5b29ee98
 
-PODFILE CHECKSUM: bef9b6ee5987085e14e72438a4c1dfb2d438084d
+PODFILE CHECKSUM: 79bfaf69604264519a928c494c8db9c80ec60e57
 
 COCOAPODS: 1.3.1

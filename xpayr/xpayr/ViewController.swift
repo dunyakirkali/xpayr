@@ -28,6 +28,7 @@ class ViewController: UITableViewController, SwipeTableViewCellDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.loadData), name: NSNotification.Name(rawValue: "ShouldRefresh"), object: nil)
 
         tableView.register(UINib(nibName: "ItemCell", bundle: nil), forCellReuseIdentifier: "ItemCell")
+
         loadData()
     }
 

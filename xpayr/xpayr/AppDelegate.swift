@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import IQKeyboardManager
 import UserNotifications
+import ChameleonFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,15 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Navigation bar
         // TODO: (dunyakirkali) Refactor to extension
-        UINavigationBar.appearance().shadowImage = UIImage()
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        UINavigationBar.appearance().barTintColor = UIColor(red: 0.952, green: 0.952, blue: 0.952, alpha: 1)
-        UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().tintColor = UIColor.black
-        UINavigationBar.appearance().titleTextAttributes = [
-            NSAttributedStringKey.foregroundColor : UIColor.black,
-            NSAttributedStringKey.font: "Futura"
-        ]
+        UINavigationBar.appearance().prefersLargeTitles = true
 
         // IQKeyboard
         // TODO: (dunyakirkali) Refactor to extension
@@ -47,6 +40,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let category = UNNotificationCategory(identifier: "ItemCategory", actions: [deleteAction], intentIdentifiers: [], options: [])
         center.setNotificationCategories([category])
         
+        // Theme
+        Chameleon.setGlobalThemeUsingPrimaryColor(.flatBlue, with: .contrast)
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            NSAttributedStringKey.foregroundColor : UIColor.white
+        ]
+        application.statusBarStyle = .lightContent
+
         return true
     }
 
