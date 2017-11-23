@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		052329751FB8934D008482FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 052329741FB8934D008482FB /* GoogleService-Info.plist */; };
 		057F3FB21FA656F3006F612E /* empty_box.json in Resources */ = {isa = PBXBuildFile; fileRef = 057F3FB11FA656F3006F612E /* empty_box.json */; };
+		05F636181FC759670090B133 /* xpayrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F636171FC759670090B133 /* xpayrUITests.swift */; };
 		105747791F6F134800154ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105747781F6F134800154ECB /* AppDelegate.swift */; };
 		1057477B1F6F134800154ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1057477A1F6F134800154ECB /* ViewController.swift */; };
 		1057477E1F6F134800154ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1057477C1F6F134800154ECB /* Main.storyboard */; };
@@ -21,9 +22,22 @@
 		96F6423D242616F23A38CACF /* Pods_xpayr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDC1001A1984BC57A8098CB /* Pods_xpayr.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		05F6361A1FC759670090B133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1057476D1F6F134800154ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105747741F6F134800154ECB;
+			remoteInfo = xpayr;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		052329741FB8934D008482FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		057F3FB11FA656F3006F612E /* empty_box.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_box.json; sourceTree = "<group>"; };
+		05F636151FC759670090B133 /* xpayrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xpayrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F636171FC759670090B133 /* xpayrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xpayrUITests.swift; sourceTree = "<group>"; };
+		05F636191FC759670090B133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		105747751F6F134800154ECB /* xpayr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xpayr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105747781F6F134800154ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1057477A1F6F134800154ECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		05F636121FC759670090B133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		105747721F6F134800154ECB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,10 +81,20 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		05F636161FC759670090B133 /* xpayrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05F636171FC759670090B133 /* xpayrUITests.swift */,
+				05F636191FC759670090B133 /* Info.plist */,
+			);
+			path = xpayrUITests;
+			sourceTree = "<group>";
+		};
 		1057476C1F6F134800154ECB = {
 			isa = PBXGroup;
 			children = (
 				105747771F6F134800154ECB /* xpayr */,
+				05F636161FC759670090B133 /* xpayrUITests */,
 				105747761F6F134800154ECB /* Products */,
 				ADF1799CDB2AD4768AD451A1 /* Pods */,
 				348273A77EDA17B8793FFF64 /* Frameworks */,
@@ -74,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				105747751F6F134800154ECB /* xpayr.app */,
+				05F636151FC759670090B133 /* xpayrUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +181,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		05F636141FC759670090B133 /* xpayrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05F6361E1FC759670090B133 /* Build configuration list for PBXNativeTarget "xpayrUITests" */;
+			buildPhases = (
+				05F636111FC759670090B133 /* Sources */,
+				05F636121FC759670090B133 /* Frameworks */,
+				05F636131FC759670090B133 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05F6361B1FC759670090B133 /* PBXTargetDependency */,
+			);
+			name = xpayrUITests;
+			productName = xpayrUITests;
+			productReference = 05F636151FC759670090B133 /* xpayrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		105747741F6F134800154ECB /* xpayr */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 105747871F6F134800154ECB /* Build configuration list for PBXNativeTarget "xpayr" */;
@@ -175,10 +225,15 @@
 		1057476D1F6F134800154ECB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Ahtung Ltd. Sti.";
 				TargetAttributes = {
+					05F636141FC759670090B133 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+						TestTargetID = 105747741F6F134800154ECB;
+					};
 					105747741F6F134800154ECB = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2FBY22AJDG;
@@ -201,11 +256,19 @@
 			projectRoot = "";
 			targets = (
 				105747741F6F134800154ECB /* xpayr */,
+				05F636141FC759670090B133 /* xpayrUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		05F636131FC759670090B133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		105747731F6F134800154ECB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +314,7 @@
 				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -261,6 +325,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -288,6 +353,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		05F636111FC759670090B133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F636181FC759670090B133 /* xpayrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		105747711F6F134800154ECB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,6 +374,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05F6361B1FC759670090B133 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 105747741F6F134800154ECB /* xpayr */;
+			targetProxy = 05F6361A1FC759670090B133 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1057477C1F6F134800154ECB /* Main.storyboard */ = {
@@ -322,6 +403,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		05F6361C1FC759670090B133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = xpayrUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.xpayrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = xpayr;
+			};
+			name = Debug;
+		};
+		05F6361D1FC759670090B133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = xpayrUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ahtung.xpayrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = xpayr;
+			};
+			name = Release;
+		};
 		105747851F6F134800154ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,7 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 2FBY22AJDG;
 				INFOPLIST_FILE = xpayr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -455,7 +580,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 2FBY22AJDG;
 				INFOPLIST_FILE = xpayr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -473,6 +598,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05F6361E1FC759670090B133 /* Build configuration list for PBXNativeTarget "xpayrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F6361C1FC759670090B133 /* Debug */,
+				05F6361D1FC759670090B133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		105747701F6F134800154ECB /* Build configuration list for PBXProject "xpayr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

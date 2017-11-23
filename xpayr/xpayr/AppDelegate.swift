@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import IQKeyboardManager
 import UserNotifications
+import Disk
 import ChameleonFramework
 
 @UIApplicationMain
@@ -19,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        let args = ProcessInfo.processInfo.arguments
+        if args.contains("--reset") {
+            reset()
+        }
+        
         // Configure Firebase
         FirebaseApp.configure()
         
@@ -41,7 +47,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         center.setNotificationCategories([category])
         
         // Theme
-        Chameleon.setGlobalThemeUsingPrimaryColor(.flatBlue, with: .contrast)
+        setupRemoteConfigDefaults()
+        fetchRemoteConfig()
+        
+        switch RemoteConfig.remoteConfig().configValue(forKey: "theme").stringValue! {
+        case "red":
+            Chameleon.setGlobalThemeUsingPrimaryColor(.flatRed, with: .contrast)
+        case "blue":
+            Chameleon.setGlobalThemeUsingPrimaryColor(.flatBlue, with: .contrast)
+        case "green":
+            Chameleon.setGlobalThemeUsingPrimaryColor(.flatGreen, with: .contrast)
+        default:
+            Chameleon.setGlobalThemeUsingPrimaryColor(.flatOrange, with: .contrast)
+        }
+        
         UINavigationBar.appearance().largeTitleTextAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.white
         ]
@@ -84,6 +103,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         NotificationCenter.default.post(name: Notification.Name(rawValue: "ShouldRefresh"), object: self)
+    }
+    
+    func setupRemoteConfigDefaults() {
+        let defaultValues = [
+            "theme" : "blue" as NSObject
+        ]
+        RemoteConfig.remoteConfig().setDefaults(defaultValues)
+    }
+    
+    func fetchRemoteConfig() {
+        RemoteConfig.remoteConfig().fetch(withExpirationDuration: 60) { (status, error) in
+            guard error == nil else {
+                print("Uh-oh. Got an error fetchin remote values: \(error)")
+                return
+            }
+            RemoteConfig.remoteConfig().activateFetched()
+        }
+    }
+    
+    func reset() {
+        do {
+            try Disk.remove("items.json", from: .documents)
+        } catch let error {
+            Crashlytics.sharedInstance().recordError(error)
+        }
     }
 }
 

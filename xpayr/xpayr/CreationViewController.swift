@@ -9,6 +9,7 @@
 import UIKit
 import Disk
 import Crashlytics
+import Firebase
 
 class CreationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: - Properties
@@ -23,8 +24,9 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupRemoteConfigDefaults()
+        
         field.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-//        picker.minimumDate = Date()
         picker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
         
         if let item = item {
@@ -38,6 +40,16 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
                     Crashlytics.sharedInstance().recordError(error)
                 }
             }
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        fetchRemoteConfig()
+        
+        if RemoteConfig.remoteConfig().configValue(forKey: "allow_any_date").stringValue != "true" {
+            picker.minimumDate = Date()
         }
     }
 
@@ -74,5 +86,22 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
 
     @objc func textFieldDidChange(_ textField: UITextField) {
         item?.name = textField.text!
+    }
+    
+    func setupRemoteConfigDefaults() {
+        let defaultValues = [
+            "allow_any_date" : "true" as NSObject
+        ]
+        RemoteConfig.remoteConfig().setDefaults(defaultValues)
+    }
+    
+    func fetchRemoteConfig() {
+        RemoteConfig.remoteConfig().fetch(withExpirationDuration: 60) { (status, error) in
+            guard error == nil else {
+                print("Uh-oh. Got an error fetchin remote values: \(error)")
+                return
+            }
+            RemoteConfig.remoteConfig().activateFetched()
+        }
     }
 }
